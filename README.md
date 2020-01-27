@@ -1,3 +1,4 @@
+```
 1. [GCD & LCM ](GCD & LCM .md)
 	1.1 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 	1.2 LCM [ O log10(n), n = max(a, b) ]
@@ -50,119 +51,119 @@
 	7.9 Josephus Ring Survivor [ O (n) ]
 	7.10 Number of ways 
 8. Dynamic Programming
- Coin Change problem [ CC ]
- Knapsack problem [ 0/1 ] 
- Longest Common Subsequence [ LCS ]  [ O (mn) ]
- Longest Increasing Subsequence [ LIS] 
- Longest Decreasing Subsequence [ LDS ] 
- Edit Distance
-Using 1,2,3 how many numbers you can make such that the sum of their digits is equal   to the given number 
- Cumulative Sum 
- Matrix Chain Multiplication [ MCM ]
+	8.1 Coin Change problem [ CC ]
+	8.2 Knapsack problem [ 0/1 ] 
+	8.3 Longest Common Subsequence [ LCS ]  [ O (mn) ]
+	8.4 Longest Increasing Subsequence [ LIS] 
+	8.5 Longest Decreasing Subsequence [ LDS ] 
+	8.6 Edit Distance
+	8.7 Using 1,2,3 how many numbers you can make such that the sum of their digits is equal to the given number 
+	8.8 Cumulative Sum 
+	8.9 Matrix Chain Multiplication [ MCM ]
 9. Greedy
- Coin Change problem [ US Coin ] 
- Knapsack problem [ Fractional ] 
- Huffman Coding
+	9.1 Coin Change problem [ US Coin ] 
+	9.2 Knapsack problem [ Fractional ] 
+	9.3 Huffman Coding
 10. Algorithm
- Leap year check
- Digital Root [ O (1) ]
- Last Digit by Mod
- Minimums Cuts
- Map [ O (n) ] 
- Clock Algebra
- Traverse
- Bitwise operation’s 
- Parentheses Balance check using Stack
-Given number 1 to N, how many steps need to make them zero by subtract a positive              number in every step [ O log2(n) ]
- Hangman Judge [ O (n  + k ) ]
- Compute b^p and (b^p) % m [ O log(p) ]
- Merge [ O (n + m) ]
- How many squares are there in a n by n square grid  [ O (n) ]
- Maximum contiguous subsequence sum [ 1D, 2D ]
- McNuggets
+	10.1 Leap year check
+	10.2 Digital Root [ O (1) ]
+	10.3 Last Digit by Mod
+	10.4 Minimums Cuts
+	10.5 Map [ O (n) ] 
+	10.6 Clock Algebra
+	10.7 Traverse
+	10.8 Bitwise operation’s 
+	10.9 Parentheses Balance check using Stack
+	10.10 Given number 1 to N, how many steps need to make them zero by subtract a positive number in every step [ O log2(n) ]
+	10.11 Hangman Judge [ O (n  + k ) ]
+	10.12 Compute b^p and (b^p) % m [ O log(p) ]
+	10.13 Merge [ O (n + m) ]
+	10.14 How many squares are there in a n by n square grid  [ O (n) ]
+	10.15 Maximum contiguous subsequence sum [ 1D, 2D ]
+	10.16 McNuggets
 11. Number Theory
- Chinese Remainder Theorem
- Number of Divisors [ O sqrt(n) ]
- Sum of Divisors [ O sqrt(n) ]
- Prime divisors
- Base Conversion [ 2 to 9 ]
- Base Conversion [ any base to any base ] [ O (n) ]
- Determine if the number valid or not providing the base [ O (n) ]
- Arabic Numerals to Roman Numerals and Roman Numerals to Arabic  Numerals
- Primility test  
- Big Number Divisibility Check	 
- Pascal’s triangle
- Bézout's identity
- Lagrange's four-square theorem
+	11.1 Chinese Remainder Theorem
+	11.2 Number of Divisors [ O sqrt(n) ]
+	11.3 Sum of Divisors [ O sqrt(n) ]
+	11.4 Prime divisors
+	11.5 Base Conversion [ 2 to 9 ]
+	11.6 Base Conversion [ any base to any base ] [ O (n) ]
+	11.7 Determine if the number valid or not providing the base [ O (n) ]
+	11.8 Arabic Numerals to Roman Numerals and Roman Numerals to Arabic  Numerals
+	11.9 Primility test  
+	11.10 Big Number Divisibility Check	 
+	11.11 Pascal’s triangle
+	11.12 Bézout's identity
+	11.13 Lagrange's four-square theorem
 12. Numerical Methods
- Root Finding Methods
- Big Integer Square Root [ Newton-Raphson Method ] 
- Interpolation and Extrapolation with Equal Intervals [ Newton’s Formula ] [ poly(n) ]
- Interpolation and Extrapolation with Unequal Intervals [ Newton & Lagrange Formula ] 
- Factorial [ Stirling's approximation ]
- Descartes' rule of signs
+	12.1 Root Finding Methods
+	12.2 Big Integer Square Root [ Newton-Raphson Method ] 
+	12.3 Interpolation and Extrapolation with Equal Intervals [ Newton’s Formula ] [ poly(n) ]
+	12.4 Interpolation and Extrapolation with Unequal Intervals [ Newton & Lagrange Formula ] 
+	12.5 Factorial [ Stirling's approximation ]
+	12.6 Descartes' rule of signs
 13. Basics of Numbers
-  Factorial 
-  Derangement or Subfactorial or Rencontres numbers
-  Fibonacci sequence
-  Prime numbers
-  Permutations
-  Combinations 
-  Catalan number
-  Odd numbers 
-  Perfect Square numbers
-  Triangular Number
-  Co-prime
-  Rational Number
+	13.1 Factorial 
+	13.2 Derangement or Subfactorial or Rencontres numbers
+	13.3 Fibonacci sequence
+	13.4 Prime numbers
+	13.5 Permutations
+	13.6 Combinations 
+	13.7 Catalan number
+	13.8 Odd numbers 
+	13.9 Perfect Square numbers
+	13.10 Triangular Number
+	13.11 Co-prime
+	13.12 Rational Number
 14. Java
- Math.random
- Big Integer 
- Big Decimal 
- String
- StringBuffer
- StringTokenizer
- Character
- Tree Set 
- Hash Set
- Tree Map
- Hash Table
- Arrays
- Vector
- ArrayList
- Array Deque
- Stack
- Queue
- Priority Queue
- Linked List
- Data Structure Tradeoffs
- Collections
- Calendar and Gregorian Calendar
- Matcher and Pattern [ Regular Expression ]
- Bit operators
- Base Conversion
- Working with \n and \r
- Sample I/O (Nafi)
- Faster I/O 
- printf
- Mathematical Library Functions 
- Java Primitive Data Types
- Others
+	14.1 Math.random
+	14.2 Big Integer 
+	14.3 Big Decimal 
+	14.4 String
+	14.5 StringBuffer
+	14.6 StringTokenizer
+	14.7 Character
+	14.8 Tree Set 
+	14.9 Hash Set
+	14.10 Tree Map
+	14.11 Hash Table
+	14.12 Arrays
+	14.13 Vector
+	14.14 ArrayList
+	14.15 Array Deque
+	14.16 Stack
+	14.17 Queue
+	14.18 Priority Queue
+	14.19 Linked List
+	14.20 Data Structure Tradeoffs
+	14.21 Collections
+	14.22 Calendar and Gregorian Calendar
+	14.23 Matcher and Pattern [ Regular Expression ]
+	14.24 Bit operators
+	14.25 Base Conversion
+	14.26 Working with \n and \r
+	14.27 Sample I/O (Nafi)
+	14.28 Faster I/O 
+	14.29 printf
+	14.30 Mathematical Library Functions 
+	14.31 Java Primitive Data Types
+	14.32 Others
 15. Computational Geometry
-  Basics
-  Triangle
-  Circle
-  Rectangle
-  Square
-  Trapezium
-  Parallelogram
-  Sphere 
-  Polygon
-  Cylinder
-  Cone
-  Line
-  Basic Formula of Geometry
-  Closest pair on 2D [ O (n log n) ]
-  Convex Hull
+	15.1 Basics
+	15.2 Triangle
+	15.3 Circle
+	15.4 Rectangle
+	15.5 Square
+	15.6 Trapezium
+	15.7 Parallelogram
+	15.8 Sphere 
+	15.9 Polygon
+	15.10 Cylinder
+	15.11 Cone
+	15.12 Line
+	15.13 Basic Formula of Geometry
+	15.14 Closest pair on 2D [ O (n log n) ]
+	15.15 Convex Hull
 16. Math
 	16.1 Value Comparisons
 	16.2 Quadratic equation
@@ -180,4 +181,4 @@ Given number 1 to N, how many steps need to make them zero by subtract a positiv
 	17.1 Temperature Conversion 
 	17.2 Equations of uniformly accelerated linear motion
 18. ASCII Table
-
+```
