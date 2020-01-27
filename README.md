@@ -1,5 +1,4 @@
-
-# 1. [GCD & LCM ](GCD & LCM .md)
+# 1. [GCD & LCM ](GCD & LCM.md)
 	1.1 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 	1.2 LCM [ O log10(n), n = max(a, b) ]
 	1.3 Extended Euclid’s Algorithm
