@@ -1,8 +1,8 @@
 # 1. [GCD & LCM ](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/GCD%20%26%20LCM.md)
-	1.1 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
-	1.2 LCM [ O log10(n), n = max(a, b) ]
-	1.3 Extended Euclid’s Algorithm
-	1.4 Basics of GCD and LCM
+	1.1 Basics of GCD and LCM
+	1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
+	1.3 LCM [ O log10(n), n = max(a, b) ]
+	1.4 Extended Euclid’s Algorithm
 # 2. Sorting
 	2.1 Basics
 	2.2 Bubble Sort [ O (n2) ] 
