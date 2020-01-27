@@ -1,7 +1,7 @@
 # 1. GCD & LCM
 1.1 Basics of GCD and LCM
 + The greatest common divisor (gcd), also known as the greatest common denominator, greatest common factor (gcf), or highest common factor (hcf), of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder
-+ if there are no greatest common divisor the answer is 1, that means they are relatively prime */
++ if there are no greatest common divisor the answer is 1, that means they are relatively prime
 + the lowest common multiple or (LCM) least common multiple or smallest common multiple of two rational numbers a and b is the smallest positive rational number that is an integer multiple of both a and b
 
 + m * n = GCD (m, n) * LCM (m, n)
