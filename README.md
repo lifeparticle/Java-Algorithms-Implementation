@@ -1,4 +1,4 @@
-```
+
 1. [GCD & LCM ](GCD & LCM .md)
 	1.1 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 	1.2 LCM [ O log10(n), n = max(a, b) ]
@@ -181,4 +181,4 @@
 	17.1 Temperature Conversion 
 	17.2 Equations of uniformly accelerated linear motion
 18. ASCII Table
-```
+
