@@ -3,7 +3,7 @@
 	1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 	1.3 LCM [ O log10(n), n = max(a, b) ]
 	1.4 Extended Euclid’s Algorithm
-# 2. Sorting
+# 2. [Sorting](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Sorting.md)
 	2.1 Basics
 	2.2 Bubble Sort [ O (n2) ] 
 	2.3 Key-indexed sorting [ O (n + k) ]
