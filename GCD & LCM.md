@@ -31,6 +31,21 @@ public int [] multiplyFractions (int [] a, int [] b) {
 	return c;
 } 
 ```
++ Summing Fractional Number
+5/1 + 9/2 + 6/3 + 7/4 = 159/12 = 13.25
+
+```java
+neu [0] = 5; neu [1] = 9; neu [2] = 6; neu [3] = 7;
+den [0] = 1; den [1] = 2; den[2] = 3; den [3] = 4;
+lcm = 1;
+for(j = 0; j < 4; ++j)
+    lcm = LCM (lcm, den[j]); // lcm = 12
+ans = 0;
+for(int j = 0; j < 4; ++j)
+    ans += (lcm / den [j]) * neu [j]; 
+System.out.println((double)((double)ans/(double)lcm)); 
+```
+
 1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 ```java
 // recursive
@@ -53,6 +68,7 @@ public int gcd (int a, int b) {
     return a;
 }
 ```
+
 1.3 LCM [ O log10(n), n = max(a, b) ]
 ```java
 /* divide first, as it MUST be divisible by gcd. It will prevent overflow, if any */
@@ -60,6 +76,7 @@ public int lcm (int m, int n) {
    return m / gcd (m,n) * n;
 }
 ```
+
 1.4 Extended Euclid’s Algorithm
 ```java
 /* returns d = GCD (a, b), and give one pair x, y such that ax + by = d */
