@@ -24,8 +24,16 @@ The largest value in the list is 21, and the smallest is 13, so the range is 21 
 The mode is the number that is repeated more than any other, so 13 is the mod (4 times)
 
 The median is the middle value in a sorted list
+
 13, 13, 13, 13, 14, 14, 16, 18, 21 [odd] [9 / 2 = 4]
 
+![Screen Shot 2020-01-28 at 8 33 37 pm](https://user-images.githubusercontent.com/1612112/73251737-9f217700-420d-11ea-89f8-e4c4e2460768.png)
+
+13, 13, 13, 13, 14, 14, 16, 18 [even] [9 / 2 = 4 and 4 - 1]
+
+![Screen Shot 2020-01-28 at 8 34 05 pm](https://user-images.githubusercontent.com/1612112/73251736-9f217700-420d-11ea-83f6-a1842724b61a.png)
+
+There is no "middle" number, because there are even numbers of numbers. In this case, the median is the mean (the usual average) of the middle two values: (13 + 14) ÷ 2 = 13.5       
 
 2.2 Bubble Sort [ O (n2) ]
 
@@ -73,6 +81,9 @@ for (j = 0; j < ar.length; ++j) {
 // input 
 // 1, 0, 4, 6, 7, 8, 0, 8, 1, 1
 ```
+
+![Screen Shot 2020-01-28 at 8 36 36 pm](https://user-images.githubusercontent.com/1612112/73251905-edcf1100-420d-11ea-9770-1fa2ab8ad05f.png)
+
 2.4 Insertion Sort [ O (n2) ]
 
 ```java
@@ -154,14 +165,29 @@ class Student implements Comparable <Student> {
         else if (this.marks < that.marks) 
             return -1;
         else { // this.time == that.time
-       // case - insensitive comparisons
-if (this.name.toLowerCase().compareTo(that.name.toLowerCase()) > 0)                  return 1 ;
-               else if (this.name.toLowerCase().compareTo(that.name.toLowerCase()) < 0)                      return -1; 
-               return 0;
+		// case - insensitive comparisons
+		if (this.name.toLowerCase().compareTo(that.name.toLowerCase()) > 0)                  
+			return 1 ;
+		else if (this.name.toLowerCase().compareTo(that.name.toLowerCase()) < 0)
+			return -1; 
+		return 0;
         } 
     }
     // first sort the students by their marks and if number of two students are same then sort by their name in lexicographically order 
     // if (this.name.compareTo(that.name) > 0)      // case - sensitive comparisons
     // else if (this.name.compareTo(that.name) < 0) // case - sensitive comparisons 
 }
+
+/*
+* Ascending order
+* this.a > that.a
+*   retrun 1;
+* this.a < that.a
+*   return -1;
+* Descending
+* this.a > that.a
+*   retrun -1;
+* this.a < that.a
+*   return 1;
+*/
 ```
