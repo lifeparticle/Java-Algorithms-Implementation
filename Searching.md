@@ -189,14 +189,16 @@ Output: index 8
 
 3.6 Uses of upper and lower bounds
 
-![Screen Shot 2020-03-28 at 4 22 53 pm](https://user-images.githubusercontent.com/1612112/77815625-99aeb300-7110-11ea-8b47-1b1af2840da4.png)
+![Screen Shot 2020-03-28 at 4 23 36 pm](https://user-images.githubusercontent.com/1612112/77815799-da5afc00-7111-11ea-8b84-2544a2c345c2.png)
 
+```java
 /* we can use lower bound to find the upper nearest prime for any composite number (positive integers that are not prime and not equal to 1). For 10 the answer will be 11 and for 23 the answer will be 27 */
 
 // count the frequencies [2 log (n)]
 public static int countOccurrence(int[] a, int n, int key) {
-return upperBound(a, n, key) - lowerBound(a, n, key);
+	return upperBound(a, n, key) - lowerBound(a, n, key);
 }
+```
 
 // Notations for intervals
 // the two numbers are called the endpoints of the interval
@@ -206,7 +208,7 @@ return upperBound(a, n, key) - lowerBound(a, n, key);
 [a, b) = including, excluding = lowerBound(high) - lowerBound(low);
 // here b = high and a = low
 
-![Screen Shot 2020-03-28 at 4 22 40 pm](https://user-images.githubusercontent.com/1612112/77815626-99aeb300-7110-11ea-833b-e347fb9a4fd4.png)
+![Screen Shot 2020-03-28 at 4 23 59 pm](https://user-images.githubusercontent.com/1612112/77815808-e646be00-7111-11ea-96ea-04984580ea53.png)
 
 (1, 29) = 9
 [1, 29] = 10
