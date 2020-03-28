@@ -21,6 +21,8 @@ Substrings are also called subwords (in America) or factors (in Europe). It is a
 ### Subsequence: 
 You are given two strings A and B. B will be the subsequence of A, if you can make B from A by deleting some (or none) characters. For example, ABD is a subsequence of ABCDEF. Where, order of the elements is preserved.
 
+![Screen Shot 2020-03-28 at 5 16 37 pm](https://user-images.githubusercontent.com/1612112/77816598-eb0e7080-7117-11ea-8444-a074e76d987b.png)
+
 ### Prefix: 
 A prefix of a string T = t1…..tn is a string T^ = t1…..tm, where m  n. A proper prefix of a string is not equal to the string itself (0 ≤m<n); some sources in addition restrict a proper prefix to be non-empty (0 < m < n). A prefix can be seen as a special case of a substring.
 
