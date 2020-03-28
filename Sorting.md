@@ -1,5 +1,5 @@
 # 2. Sorting
-2.1 Basics
+## 2.1 Basics
 Sorting Algorithms
 + (n^2) comparison-based sorting algorithms Bubble/Selection/Insertion
 + (n log n) comparison-based sorting algorithms Merge/Heap/Quick [Arrays.sort()] 
@@ -35,7 +35,7 @@ The median is the middle value in a sorted list
 
 There is no "middle" number, because there are even numbers of numbers. In this case, the median is the mean (the usual average) of the middle two values: (13 + 14) ÷ 2 = 13.5       
 
-2.2 Bubble Sort [ O (n2) ]
+## 2.2 Bubble Sort [ O (n2) ]
 
 ```java
 // with two optimizations
@@ -61,7 +61,7 @@ public void bubbleSort(int[] arr) {
 }
 ```
 
-2.3 Key-indexed sorting [ O (n + k) ]
+## 2.3 Key-indexed sorting [ O (n + k) ]
 
 ```java
 int [] ar = new int [11];  // Will Sort range of  0 to 10
@@ -84,7 +84,7 @@ for (j = 0; j < ar.length; ++j) {
 
 ![Screen Shot 2020-01-28 at 8 36 36 pm](https://user-images.githubusercontent.com/1612112/73251905-edcf1100-420d-11ea-9770-1fa2ab8ad05f.png)
 
-2.4 Insertion Sort [ O (n2) ]
+## 2.4 Insertion Sort [ O (n2) ]
 
 ```java
 // key < ascending && key > descending
@@ -116,7 +116,7 @@ while (j >= 0 && key < ar [j]) {
 ar [j + 1] = key;
 
 ```
-2.5 Selection Sort [ O (n2) ]
+## 2.5 Selection Sort [ O (n2) ]
 
 ```java
 public void selectionSort(int[] arr) { 
@@ -137,7 +137,7 @@ public void selectionSort(int[] arr) {
 }
 ```
 
-2.6 Object Sort [ O (n log n) ]
+## 2.6 Object Sort [ O (n log n) ]
 
 ```java
 public class ObjectSort {
