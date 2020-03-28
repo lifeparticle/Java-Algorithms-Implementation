@@ -1,6 +1,6 @@
 # 3. String
 
-4.1 Basics
+## 4.1 Basics
 
 ### Substring: 
 A substring (or factor) of a string T = t1…..tn is a string T = t1+i…..tm+i , where 0  i  and m + i   n . A substring of a string is a prefix of a suffix of the string, and equivalently a suffix of a prefix. If T is a substring of T, it is also a subsequence, which is a more general concept. 
@@ -52,18 +52,18 @@ Permutation: You are given two strings A and B. B will be said to be the permuta
 
 aabc is a permutation of caba
 
-4.2 Brute Force [ O (n – m + 1) m ]
+## 4.2 Brute Force [ O (n – m + 1) m ]
 
-4.3 Knuth Morris Pratt  (KMP) 
+## 4.3 Knuth Morris Pratt  (KMP) 
 
-4.4 Rabin - Karp 
+## 4.4 Rabin - Karp 
 
-4.5 Aho - Corasick
+## 4.5 Aho - Corasick
 
-4.6 Boyer – Moore
+## 4.6 Boyer – Moore
 
-4.7 Suffix Tree
+## 4.7 Suffix Tree
 
-4.8 Determine Subsequence [ Sliding Window ] [  O (n) ]
+## 4.8 Determine Subsequence [ Sliding Window ] [  O (n) ]
 
-4.9 Determine Anagrams O (n)
+## 4.9 Determine Anagrams O (n)
