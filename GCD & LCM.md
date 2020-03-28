@@ -1,5 +1,5 @@
 # 1. GCD & LCM
-1.1 Basics of GCD and LCM
+## 1.1 Basics of GCD and LCM
 + The greatest common divisor (gcd), also known as the greatest common denominator, greatest common factor (gcf), or highest common factor (hcf), of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder
 + if there are no greatest common divisor the answer is 1, that means they are relatively prime
 + the lowest common multiple or (LCM) least common multiple or smallest common multiple of two rational numbers a and b is the smallest positive rational number that is an integer multiple of both a and b
@@ -46,7 +46,7 @@ for(int j = 0; j < 4; ++j)
 System.out.println((double)((double)ans/(double)lcm)); 
 ```
 
-1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
+## 1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
 ```java
 // recursive
 public int gcd (int M, int N) {
@@ -69,7 +69,7 @@ public int gcd (int a, int b) {
 }
 ```
 
-1.3 LCM [ O log10(n), n = max(a, b) ]
+## 1.3 LCM [ O log10(n), n = max(a, b) ]
 ```java
 /* divide first, as it MUST be divisible by gcd. It will prevent overflow, if any */
 public int lcm (int m, int n) {
@@ -77,7 +77,7 @@ public int lcm (int m, int n) {
 }
 ```
 
-1.4 Extended Euclid’s Algorithm
+## 1.4 Extended Euclid’s Algorithm
 ```java
 /* returns d = GCD (a, b), and give one pair x, y such that ax + by = d */
 int x, y, d;
