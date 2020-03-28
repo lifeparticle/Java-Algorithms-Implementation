@@ -144,7 +144,7 @@ public static int upperBound (int[] a, int n, int key) {
 
 ### Lower Bound
 
-![Screen Shot 2020-03-28 at 4 23 59 pm](https://user-images.githubusercontent.com/1612112/77815617-96b3c280-7110-11ea-8160-51ad62efe05a.png)
+![Screen Shot 2020-03-28 at 4 22 40 pm](https://user-images.githubusercontent.com/1612112/77815731-5c96f080-7111-11ea-801b-9793ab543908.png)
 
 What is the first occurrence of 10, but if it is not there it also return the insertion position which will maintain the sorted order, the position will be 4 because we can’t push 10 into index number 3, if we push then the array will become unsorted, keep in mind that we assumed that if we push 10 into index number 4 then the array will shift right by one index. 
 So if we ask lower bound to give me the index of 10, it will return index 4 Boss.
@@ -153,7 +153,7 @@ Special case 1:
 
 Array a [] Numbers are:
 
-![Screen Shot 2020-03-28 at 4 23 36 pm](https://user-images.githubusercontent.com/1612112/77815618-97e4ef80-7110-11ea-9508-04244a4c8247.png)
+![Screen Shot 2020-03-28 at 4 22 53 pm](https://user-images.githubusercontent.com/1612112/77815742-691b4900-7111-11ea-927e-64c68de47e0f.png)
 
 Input: 8
 
@@ -164,7 +164,7 @@ Special case 2:
 
 Array a [] Numbers are: 
 
-![Screen Shot 2020-03-28 at 4 23 26 pm](https://user-images.githubusercontent.com/1612112/77815619-987d8600-7110-11ea-88f2-d0e8aaf1973a.png)
+![Screen Shot 2020-03-28 at 4 23 06 pm](https://user-images.githubusercontent.com/1612112/77815753-73d5de00-7111-11ea-81d7-69e07e1b9a30.png)
 
 Input: 3
 
