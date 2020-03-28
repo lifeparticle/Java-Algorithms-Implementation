@@ -16,14 +16,14 @@ int binarySearchIterative (int key, int Array[]) {
 	int mid = 0;
 
 	while (left <= right) {
-	  mid = (left + right) >> 1;
+		mid = (left + right) >> 1;
 
-	  if (key == Array [mid])
-		  return mid;
-	  else if(key > Array [mid])
-		  left = mid + 1;
-	  else 
-		  right = mid - 1;
+		if (key == Array [mid])
+			return mid;
+		else if(key > Array [mid])
+			left = mid + 1;
+		else
+			right = mid - 1;
 	}
 	return -1;
 }
@@ -60,9 +60,9 @@ int binarySearchIterativeFirstOccurrence (int key) {
 		mid = (left + right) >> 1;
 
 		if (key == Array [mid]){
-		 pos = mid;
+			pos = mid;
 			right = mid - 1;
-	}
+		}
 		else if(key > Array [mid])
 			left = mid + 1;
 		else
@@ -140,7 +140,6 @@ public static int upperBound (int[] a, int n, int key) {
 	return lo;
 }
 ```
-
 
 ### Lower Bound
 
@@ -222,8 +221,8 @@ public static int countOccurrence(int[] a, int n, int key) {
 public static boolean linLast(int a[]) {
 	int i;
 	for(i = a.length - 1; i >= 0; --i) {
-	  if(a[i] == 4343)   
-		  return true;
+		if(a[i] == 4343)   
+			return true;
 	}
 	return false;
 }
