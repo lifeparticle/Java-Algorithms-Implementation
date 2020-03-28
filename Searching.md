@@ -29,8 +29,6 @@ int binarySearchIterative (int key, int Array[]) {
 }
 ```
 
-
-
 ```java
 int binarySearchRecursive (int key, int l, int r) {
 	if (l > r)
@@ -143,7 +141,77 @@ public static int upperBound (int[] a, int n, int key) {
 }
 ```
 
-3.6 Uses of upper and lower bounds 
+
+### Lower Bound
+
+![Screen Shot 2020-03-28 at 4 23 59 pm](https://user-images.githubusercontent.com/1612112/77815617-96b3c280-7110-11ea-8160-51ad62efe05a.png)
+
+What is the first occurrence of 10, but if it is not there it also return the insertion position which will maintain the sorted order, the position will be 4 because we can’t push 10 into index number 3, if we push then the array will become unsorted, keep in mind that we assumed that if we push 10 into index number 4 then the array will shift right by one index. 
+So if we ask lower bound to give me the index of 10, it will return index 4 Boss.
+
+Special case 1:
+
+Array a [] Numbers are:
+
+![Screen Shot 2020-03-28 at 4 23 36 pm](https://user-images.githubusercontent.com/1612112/77815618-97e4ef80-7110-11ea-9508-04244a4c8247.png)
+
+Input: 8
+
+Output: index 4, which is not a valid index in array a []
+
+
+Special case 2:
+
+Array a [] Numbers are: 
+
+![Screen Shot 2020-03-28 at 4 23 26 pm](https://user-images.githubusercontent.com/1612112/77815619-987d8600-7110-11ea-88f2-d0e8aaf1973a.png)
+
+Input: 3
+
+Output: index 1
+
+### Upper Bound
+
+![Screen Shot 2020-03-28 at 4 23 18 pm](https://user-images.githubusercontent.com/1612112/77815620-99161c80-7110-11ea-8fcc-4373f6eb6345.png)
+
+What is the last position of 10, but if it is not there it also return the insertion position which will maintain the sorted order, the position will be 4 because we can’t push 10 into index number 3, if we push then the array will become unsorted, keep in mind that we assumed that if we push 10 into index number 4 then the array will shift right by one index. 
+So if we ask upper bound to give me the index of 10, it will return index 4 Boss.
+
+Special case 1:
+
+Array a [] Numbers are:
+
+![Screen Shot 2020-03-28 at 4 23 06 pm](https://user-images.githubusercontent.com/1612112/77815623-99161c80-7110-11ea-9363-186f07bf7105.png)
+
+Input: 3
+
+Output: index 8
+
+3.6 Uses of upper and lower bounds
+
+![Screen Shot 2020-03-28 at 4 22 53 pm](https://user-images.githubusercontent.com/1612112/77815625-99aeb300-7110-11ea-8b47-1b1af2840da4.png)
+
+/* we can use lower bound to find the upper nearest prime for any composite number (positive integers that are not prime and not equal to 1). For 10 the answer will be 11 and for 23 the answer will be 27 */
+
+// count the frequencies [2 log (n)]
+public static int countOccurrence(int[] a, int n, int key) {
+return upperBound(a, n, key) - lowerBound(a, n, key);
+}
+
+// Notations for intervals
+// the two numbers are called the endpoints of the interval
+(a, b) = excluding, excluding = lowerBound(high) - upperBound (low);
+[a, b] = including, including = upperBound (high) - lowerBound(low);
+(a, b] = excluding, including = upperBound (high) - upperBound (low);
+[a, b) = including, excluding = lowerBound(high) - lowerBound(low);
+// here b = high and a = low
+
+![Screen Shot 2020-03-28 at 4 22 40 pm](https://user-images.githubusercontent.com/1612112/77815626-99aeb300-7110-11ea-833b-e347fb9a4fd4.png)
+
+(1, 29) = 9
+[1, 29] = 10
+(1, 29] = 10
+[1, 29) = 9
 
 3.7 Linear Search [ O (n) ]
 
