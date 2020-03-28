@@ -18,7 +18,7 @@
 	3.5 Lower Bound [ O (log n) ] And Upper Bound [ O (log n) ] 
 	3.6 Uses of upper and lower bounds 
 	3.7 Linear Search [ O (n) ]
-# 4. String
+# 4. [String](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	4.1 Basics
 	4.2 Brute Force [ O (n – m + 1) m ]
 	4.3 Knuth Morris Pratt  (KMP) 
@@ -28,18 +28,18 @@
 	4.7 Suffix Tree
 	4.8 Determine Subsequence [ Sliding Window ] [  O (n) ]
 	4.9 Determine Anagrams O (n)
-# 5. Number Generation
+# 5. [Number Generation](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	5.1 Generation of  Fibonacci Numbers [ O(n) ] [ DP ]
 	5.2 Generation of  Fibonacci Numbers [ log(n) ] 
 	5.3 Factorial [ O(n) ] [ DP ]     
 	5.4 Generation of  Derangement or Subfactorial or Rencontres numbers [ O (n) ] [ DP ]
 	5.5 Generation of  Prime Numbers by The Sieve of Eratosthenes  [ O (n log log n) ]
 	5.6 Generation of Catalan number [ O (n) ] [ DP ]
-# 6. Fibonacci Series
+# 6. [Fibonacci Series](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	6.1 Brick Wall Patterns [ O(n) ] [ DP ]
 	6.2 Determine the number of n-bit sequences that contain no adjacent 1’s [ O(n) ] [ DP ]
 	6.3 Bee [ Modified version of Fibonacci sequence ] [ O(n) ] [ DP ]
-# 7. Combinatorics
+# 7. [Combinatorics](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	7.1 nCr 
 	7.2 nPr  
 	7.3 Kth Permutation
@@ -50,7 +50,7 @@
 	7.8 Digit Occurrence Count in a number
 	7.9 Josephus Ring Survivor [ O (n) ]
 	7.10 Number of ways 
-# 8. Dynamic Programming
+# 8. [Dynamic Programming](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	8.1 Coin Change problem [ CC ]
 	8.2 Knapsack problem [ 0/1 ] 
 	8.3 Longest Common Subsequence [ LCS ]  [ O (mn) ]
@@ -60,11 +60,11 @@
 	8.7 Using 1,2,3 how many numbers you can make such that the sum of their digits is equal to the given number 
 	8.8 Cumulative Sum 
 	8.9 Matrix Chain Multiplication [ MCM ]
-# 9. Greedy
+# 9. [Greedy](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	9.1 Coin Change problem [ US Coin ] 
 	9.2 Knapsack problem [ Fractional ] 
 	9.3 Huffman Coding
-# 10. Algorithm
+# 10. [Algorithm](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	10.1 Leap year check
 	10.2 Digital Root [ O (1) ]
 	10.3 Last Digit by Mod
@@ -81,7 +81,7 @@
 	10.14 How many squares are there in a n by n square grid  [ O (n) ]
 	10.15 Maximum contiguous subsequence sum [ 1D, 2D ]
 	10.16 McNuggets
-# 11. Number Theory
+# 11. [Number Theory](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	11.1 Chinese Remainder Theorem
 	11.2 Number of Divisors [ O sqrt(n) ]
 	11.3 Sum of Divisors [ O sqrt(n) ]
@@ -95,14 +95,14 @@
 	11.11 Pascal’s triangle
 	11.12 Bézout's identity
 	11.13 Lagrange's four-square theorem
-# 12. Numerical Methods
+# 12. [Numerical Methods](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	12.1 Root Finding Methods
 	12.2 Big Integer Square Root [ Newton-Raphson Method ] 
 	12.3 Interpolation and Extrapolation with Equal Intervals [ Newton’s Formula ] [ poly(n) ]
 	12.4 Interpolation and Extrapolation with Unequal Intervals [ Newton & Lagrange Formula ] 
 	12.5 Factorial [ Stirling's approximation ]
 	12.6 Descartes' rule of signs
-# 13. Basics of Numbers
+# 13. [Basics of Numbers](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	13.1 Factorial 
 	13.2 Derangement or Subfactorial or Rencontres numbers
 	13.3 Fibonacci sequence
@@ -115,7 +115,7 @@
 	13.10 Triangular Number
 	13.11 Co-prime
 	13.12 Rational Number
-# 14. Java
+# 14. [Java](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	14.1 Math.random
 	14.2 Big Integer 
 	14.3 Big Decimal 
@@ -148,7 +148,7 @@
 	14.30 Mathematical Library Functions 
 	14.31 Java Primitive Data Types
 	14.32 Others
-# 15. Computational Geometry
+# 15. [Computational Geometry](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	15.1 Basics
 	15.2 Triangle
 	15.3 Circle
@@ -164,7 +164,7 @@
 	15.13 Basic Formula of Geometry
 	15.14 Closest pair on 2D [ O (n log n) ]
 	15.15 Convex Hull
-# 16. Math
+# 16. [Math](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	16.1 Value Comparisons
 	16.2 Quadratic equation
 	16.3 Series
@@ -177,7 +177,7 @@
 	16.10 Even & Odd number
 	16.11 Set Theory
 	16.12 Zero
-# 17. Physics
+# 17. [Physics](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
 	17.1 Temperature Conversion 
 	17.2 Equations of uniformly accelerated linear motion
-# 18. ASCII Table
+# 18. [ASCII Table](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md)
