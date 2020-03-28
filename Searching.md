@@ -234,8 +234,8 @@ public static boolean linLast(int a[]) {
 public static boolean linFirst(int a[]) {
 	int i;
 	for(i = 0; i < a.length; ++i) {
-	 if(a[i] == 4343)   
-		 return true;
+		if(a[i] == 4343)   
+			return true;
 	}
 	return false;
 }
@@ -247,8 +247,8 @@ public static boolean linOpt(int a[]) {
 	int i;
 	int j = a.length - 1;
 	for(i = 0; i <= j; ++i, --j) {
-	 if(a[i] == 4343 || a[j] == 4343)   
-		 return true;
+		if(a[i] == 4343 || a[j] == 4343)   
+			return true;
 	}
 	return false;
 }
