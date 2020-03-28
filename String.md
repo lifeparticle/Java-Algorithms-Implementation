@@ -8,11 +8,13 @@ Given a pattern P, you can find its occurrences in a string T with a string sear
 Finding the longest string which is equal to a substring of two or more strings is known as the longest common substring problem.
 Example: The string ana is equal to substrings (and subsequences) of banana at two different offsets:
 
+```
 banana
  |||||
  ana||
    |||
    ana
+```
 
 Substrings are also called subwords (in America) or factors (in Europe). It is also a subsequence
 
@@ -22,17 +24,21 @@ Prefix: A prefix of a string T = t1…..tn is a string T^ = t1…..tm, where m  
 
 Example: The string ban is equal to a prefix (and substring and subsequence) of the string banana:
 
+```
 banana
 |||
 ban
+```
 
 Suffix: A suffix of a string T = t1…..tn is a string T^ = tn – m + 1…..tm where m  n. A proper suffix of a string is not equal to the string itself (0 <m≤n); again, a more restricted interpretation is that it is also not empty (0 < m < n). A suffix can be seen as a special case of a substring.
 
 Example: The string nana is equal to a suffix (and substring and subsequence) of the string banana:
 
+```
 banana
   ||||
   nana
+```
 
 Border: A border is a suffix and prefix of the same string, e.g. "bab" is a border of "babab".
 
