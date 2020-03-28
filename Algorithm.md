@@ -1,1 +1,1 @@
-\# 10. Algorithm
+# 10. Algorithm
