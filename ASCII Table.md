@@ -1,1 +1,1 @@
-\# 18. ASCII Table
+# 18. ASCII Table

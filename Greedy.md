@@ -1,1 +1,1 @@
-\# 9. Greedy
+# 9. Greedy

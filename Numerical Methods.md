@@ -1,1 +1,1 @@
-\# 12. Numerical Methods
+# 12. Numerical Methods

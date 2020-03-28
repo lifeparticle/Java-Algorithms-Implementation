@@ -1,1 +1,1 @@
-\# 6. Fibonacci Series
+# 6. Fibonacci Series
