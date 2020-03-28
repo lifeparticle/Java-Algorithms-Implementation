@@ -86,7 +86,7 @@ public static void bruteForce (String T, String P) {
 
 ## 4.3 Knuth Morris Pratt  (KMP) 
 
-```
+```java
 String T, P;
 int n, m; 
 int [] b; // b = back table
