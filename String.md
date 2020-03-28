@@ -56,12 +56,13 @@ aabc is a permutation of caba
 
 ## 4.2 Brute Force [ O (n – m + 1) m ]
 
+```
 T = 000010001010001 and P = 0001, the occurrences are:
 
 first occurrence starts at T[1]
 second occurrence starts at T[5]
 third occurrence starts at T[11]
-
+```
 
 ```java
 // T = Text & P = Pattern
