@@ -181,3 +181,15 @@
 	17.1 Temperature Conversion 
 	17.2 Equations of uniformly accelerated linear motion
 # 18. [ASCII Table](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/ASCII%20Table.md)
+
+Bug Reports and Feature Requests
+============
+Please create an issue with as much information you can. Thank you.
+
+Author
+============
+Mahbub Zaman (https://mahbub.ninja)
+
+License
+============
+MIT License
