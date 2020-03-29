@@ -153,6 +153,7 @@ public static void gen() {
 2. For small MAX value tune it
 3. 0 indexing 
 
+
 ```
 p[i] = 2;
 p[i] = 3;
@@ -160,7 +161,9 @@ p[i] = 5;
 p[i] = 7;
 ```
 
+
 4. 1 indexing, where i is 1 to n
+
 
 ```
 p[i-1] = 2;
@@ -168,6 +171,7 @@ p[i-1] = 3;
 p[i-1] = 5;
 p[i-1] = 7;
 ```
+
 
 ```java
 /* determine a number is prime or not */
