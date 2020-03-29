@@ -143,7 +143,7 @@ public static int upperBound (int[] a, int n, int key) {
 
 ### Lower Bound
 
-![Screen Shot 2020-03-28 at 4 22 40 pm](https://user-images.githubusercontent.com/1612112/77815731-5c96f080-7111-11ea-801b-9793ab543908.png)
+<img width="728" alt="Screen Shot 2020-03-29 at 3 15 44 pm" src="https://user-images.githubusercontent.com/1612112/77840205-7ea37800-71d0-11ea-8697-68398af91bc8.png">
 
 What is the first occurrence of 10, but if it is not there it also return the insertion position which will maintain the sorted order, the position will be 4 because we can’t push 10 into index number 3, if we push then the array will become unsorted, keep in mind that we assumed that if we push 10 into index number 4 then the array will shift right by one index. 
 So if we ask lower bound to give me the index of 10, it will return index 4 Boss.
@@ -152,7 +152,7 @@ Special case 1:
 
 Array a [] Numbers are:
 
-![Screen Shot 2020-03-28 at 4 22 53 pm](https://user-images.githubusercontent.com/1612112/77815742-691b4900-7111-11ea-927e-64c68de47e0f.png)
+<img width="308" alt="Screen Shot 2020-03-29 at 3 16 00 pm" src="https://user-images.githubusercontent.com/1612112/77840208-8105d200-71d0-11ea-8359-5b7d5860fd83.png">
 
 Input: 8
 
@@ -163,7 +163,7 @@ Special case 2:
 
 Array a [] Numbers are: 
 
-![Screen Shot 2020-03-28 at 4 23 06 pm](https://user-images.githubusercontent.com/1612112/77815753-73d5de00-7111-11ea-81d7-69e07e1b9a30.png)
+<img width="727" alt="Screen Shot 2020-03-29 at 3 16 32 pm" src="https://user-images.githubusercontent.com/1612112/77840209-882ce000-71d0-11ea-98fb-80fc0981178a.png">
 
 Input: 3
 
@@ -171,7 +171,7 @@ Output: index 1
 
 ### Upper Bound
 
-![Screen Shot 2020-03-28 at 4 23 18 pm](https://user-images.githubusercontent.com/1612112/77815620-99161c80-7110-11ea-8fcc-4373f6eb6345.png)
+<img width="729" alt="Screen Shot 2020-03-29 at 3 16 41 pm" src="https://user-images.githubusercontent.com/1612112/77840210-91b64800-71d0-11ea-9fa0-97523701b463.png">
 
 What is the last position of 10, but if it is not there it also return the insertion position which will maintain the sorted order, the position will be 4 because we can’t push 10 into index number 3, if we push then the array will become unsorted, keep in mind that we assumed that if we push 10 into index number 4 then the array will shift right by one index. 
 So if we ask upper bound to give me the index of 10, it will return index 4 Boss.
@@ -180,7 +180,7 @@ Special case 1:
 
 Array a [] Numbers are:
 
-![Screen Shot 2020-03-28 at 4 23 06 pm](https://user-images.githubusercontent.com/1612112/77815623-99161c80-7110-11ea-9363-186f07bf7105.png)
+<img width="725" alt="Screen Shot 2020-03-29 at 3 16 50 pm" src="https://user-images.githubusercontent.com/1612112/77840214-967afc00-71d0-11ea-876f-75dfc1c7c9e3.png">
 
 Input: 3
 
@@ -188,7 +188,7 @@ Output: index 8
 
 ## 3.6 Uses of upper and lower bounds
 
-![Screen Shot 2020-03-28 at 4 23 36 pm](https://user-images.githubusercontent.com/1612112/77815799-da5afc00-7111-11ea-8b84-2544a2c345c2.png)
+<img width="728" alt="Screen Shot 2020-03-29 at 3 17 38 pm" src="https://user-images.githubusercontent.com/1612112/77840216-9b3fb000-71d0-11ea-93aa-fce95d971902.png">
 
 ```java
 /* we can use lower bound to find the upper nearest prime for any composite number (positive integers that are not prime and not equal to 1). For 10 the answer will be 11 and for 23 the answer will be 27 */
