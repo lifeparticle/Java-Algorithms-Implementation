@@ -199,6 +199,7 @@ public static int countOccurrence(int[] a, int n, int key) {
 }
 ```
 
+```
 // Notations for intervals
 // the two numbers are called the endpoints of the interval
 (a, b) = excluding, excluding = lowerBound(high) - upperBound (low);
@@ -206,13 +207,16 @@ public static int countOccurrence(int[] a, int n, int key) {
 (a, b] = excluding, including = upperBound (high) - upperBound (low);
 [a, b) = including, excluding = lowerBound(high) - lowerBound(low);
 // here b = high and a = low
+```
 
-![Screen Shot 2020-03-28 at 4 23 59 pm](https://user-images.githubusercontent.com/1612112/77815808-e646be00-7111-11ea-96ea-04984580ea53.png)
+<img width="736" alt="Screen Shot 2020-03-29 at 3 09 22 pm" src="https://user-images.githubusercontent.com/1612112/77840115-4cdde180-71cf-11ea-8fc0-0024f01fcfcd.png">
 
+```
 (1, 29) = 9
 [1, 29] = 10
 (1, 29] = 10
 [1, 29) = 9
+```
 
 ## 3.7 Linear Search [ O (n) ]
 
