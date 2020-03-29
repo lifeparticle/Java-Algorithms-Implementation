@@ -27,11 +27,11 @@ The median is the middle value in a sorted list
 
 13, 13, 13, 13, 14, 14, 16, 18, 21 [odd] [9 / 2 = 4]
 
-![Screen Shot 2020-01-28 at 8 33 37 pm](https://user-images.githubusercontent.com/1612112/73251737-9f217700-420d-11ea-89f8-e4c4e2460768.png)
+<img width="597" alt="Screen Shot 2020-03-29 at 3 02 53 pm" src="https://user-images.githubusercontent.com/1612112/77840030-7ba78800-71ce-11ea-97a1-ba0b7d27c7ed.png">
 
 13, 13, 13, 13, 14, 14, 16, 18 [even] [9 / 2 = 4 and 4 - 1]
 
-![Screen Shot 2020-01-28 at 8 34 05 pm](https://user-images.githubusercontent.com/1612112/73251736-9f217700-420d-11ea-83f6-a1842724b61a.png)
+<img width="534" alt="Screen Shot 2020-03-29 at 3 03 03 pm" src="https://user-images.githubusercontent.com/1612112/77840032-82ce9600-71ce-11ea-946d-be8243d42495.png">
 
 There is no "middle" number, because there are even numbers of numbers. In this case, the median is the mean (the usual average) of the middle two values: (13 + 14) ÷ 2 = 13.5       
 
