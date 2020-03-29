@@ -82,7 +82,7 @@ for (j = 0; j < ar.length; ++j) {
 // 1, 0, 4, 6, 7, 8, 0, 8, 1, 1
 ```
 
-![Screen Shot 2020-01-28 at 8 36 36 pm](https://user-images.githubusercontent.com/1612112/73251905-edcf1100-420d-11ea-9770-1fa2ab8ad05f.png)
+<img width="728" alt="Screen Shot 2020-03-29 at 3 05 58 pm" src="https://user-images.githubusercontent.com/1612112/77840080-d4772080-71ce-11ea-9fde-0a7097847cd6.png">
 
 ## 2.4 Insertion Sort [ O (n2) ]
 
