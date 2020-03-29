@@ -25,12 +25,15 @@ public void reduceFraction (int [] a) {
 } 
 ```
 + Multiply Fractional Number
+a[0]/a[1] * b[0]/b[1]
+
 ```java
 public int [] multiplyFractions (int [] a, int [] b) {
 	int c [] = {a[0] * b[0], a[1] * b[1]};
 	return c;
 } 
 ```
+
 + Summing Fractional Number
 5/1 + 9/2 + 6/3 + 7/4 = 159/12 = 13.25
 
