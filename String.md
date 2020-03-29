@@ -60,6 +60,7 @@ aabc is a permutation of caba
 T = 000010001010001 and P = 0001, the occurrences are:
 ```
 <img width="453" alt="Screen Shot 2020-03-29 at 3 21 24 pm" src="https://user-images.githubusercontent.com/1612112/77840256-05585500-71d1-11ea-88ea-9bfa696ffb78.png">
+
 ```
 first occurrence starts at T[1]
 second occurrence starts at T[5]
