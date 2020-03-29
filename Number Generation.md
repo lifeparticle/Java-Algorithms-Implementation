@@ -14,7 +14,7 @@ for (int i = 0; i < b.length; ++i)
 ```
 
 ```java
-int fib Recursive (int num) {
+int fibRecursive (int num) {
     if (num == 0)
        return 0;
     else if (num == 1)
