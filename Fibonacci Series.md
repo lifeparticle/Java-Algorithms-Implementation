@@ -4,7 +4,7 @@
 
 Brick Numbers
 
-<img width="874" alt="Screen Shot 2020-03-30 at 1 36 40 pm" src="https://user-images.githubusercontent.com/1612112/77869817-8e33c700-728b-11ea-9617-d0a5980c237a.png">
+<img width="874" alt="Screen Shot 2020-03-30 at 1 36 40 pm" src="https://user-images.githubusercontent.com/1612112/77870423-1ebed700-728d-11ea-806e-7c05026bc7d2.png">
 
 For 1 bricks there is1 pattern
 For 2 bricks there are 2 patterns
