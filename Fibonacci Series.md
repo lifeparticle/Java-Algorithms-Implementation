@@ -38,7 +38,7 @@ For example, for n = 3 the answer is 5 (sequences 000, 001, 010, 100, 101 are ac
 0	0	1
 0	1	0
 0	1	1
-1	0   0
+1	0   	0
 1	0	1
 1	1	0
 1	1	1
