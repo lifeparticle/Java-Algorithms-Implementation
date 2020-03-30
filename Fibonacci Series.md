@@ -56,7 +56,7 @@ for(int i = 3; i < fibo.length; ++i)
 
 | Input(Year) | Output(Male) | Output(Total)  |
 |---|---|---|
-| 0	| 0	| 1 |
+| 0 | 0 | 1 |
 | 1 | 1 | 2 |
 | 2 | 2 | 4 |
 | 3 | 4 | 7 |
