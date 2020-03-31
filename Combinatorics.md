@@ -3,11 +3,11 @@
 
 ## 7.1 nCr
 
-TOP
+TODO
 
 ## 7.2 nPr
 
-TOP
+TODO
 
 ## 7.3 Kth Permutation
 
@@ -146,6 +146,6 @@ N  (N-1) / 2
 
 ### How many ways 2 queens can attack in n  m chess board
 
-1.  For horizontal attack = row  column  (column – 1)
-2.  For vertical attack = column  row  (row – 1)
+1. For horizontal attack = row  column  (column – 1)
+2. For vertical attack = column  row  (row – 1)
 3. For diagonal attack =;
