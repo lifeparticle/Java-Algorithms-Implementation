@@ -17,17 +17,18 @@ TODO
 
 ```java
 public static double countDigit(long a) {
-     double sum;
-     long i;
-     if(a == 0) 
-	 return 1;
-     else {
+	double sum;
+	long i;
+	if(a == 0) 
+		return 1;
+	else {
 		sum = 0;
 		for(i = 1; i <= a; ++i)
 			sum += Math.log10(i); 
 		return Math.floor(sum) + 1;
 	}
 }
+
 double sum;
 long n;
 n = sc.nextLong();
