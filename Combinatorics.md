@@ -166,7 +166,7 @@ N  (N-1) / 2
 (2, 3), (2, 4), (2, 5)
 (3, 4), (3, 5)
 (4, 5)
-5  (5-1)/2 = 10
+5 * (5-1)/2 = 10
 ```
 
 ### How many ways 2 queens can attack in n  m chess board
