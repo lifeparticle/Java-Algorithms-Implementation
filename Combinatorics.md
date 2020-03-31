@@ -142,12 +142,12 @@ ArrayDeque<Integer> Q = new ArrayDeque<Integer>();
 ### How many different ways you can give m elements to n people. You can give n^m ways.
 
 ### If there are ‘a’ ways to do one thing and ‘b’ ways to do another thing, then there are 
-‘a’  ‘b’ ways to do these two things in succession.
+‘a’ * ‘b’ ways to do these two things in succession.
 
 ### How many different ways you can rearrange the letters in a word. The number of ways to arrange a word of length d is: 
 
 ```
-d! / (nA!  nB!  nC!  …) 
+d! / (nA! * nB! * nC! * …) 
 ```
 
 Where nX is the number of times the letter X appears in the word
@@ -158,7 +158,7 @@ HAPPY = 5!\2!  = 120\2 = 60
 
 ### How many different pairs you can create with N elements.
 
-N  (N-1) / 2
+N * (N-1) / 2
 
 ```java
 1, 2, 3, 4, 5 (N = 5)
@@ -171,6 +171,6 @@ N  (N-1) / 2
 
 ### How many ways 2 queens can attack in n  m chess board
 
-1. For horizontal attack = row  column  (column – 1)
-2. For vertical attack = column  row  (row – 1)
+1. For horizontal attack = row * column * (column – 1)
+2. For vertical attack = column * row * (row – 1)
 3. For diagonal attack =;
