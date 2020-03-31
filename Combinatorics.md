@@ -85,7 +85,30 @@ TODO
 ## 7.9 Josephus Ring Survivor [ O (n) ]
 
 ```java
+// O (n)  
+// Don’t use the recursive one when n is big.
+public static int Joseph_Reursive(int n,int k){
+    if(n == 1)
+      return 0;
+    return (Joseph_Reursive(n - 1,k) + k) % n; 
+}
+```
+
+```java
+// O (n)
+// If we use One (1) indexing then add 1 to the answer
+public int Joseph_Iterative(int n,int k) {
+    int ans = 0;
+    for (int i = 2; i <= n; ++i){
+      ans = (ans + k) % i;
+    }
+    return ans;
+}
+```
+
+```java
 // Using Queue
+// The Basic Idea of Josephus Ring Survivor
 ArrayDeque<Integer> Q = new ArrayDeque<Integer>();
     Q.clear();
     for(int i = 1; i <= n; ++i)
@@ -114,7 +137,7 @@ ArrayDeque<Integer> Q = new ArrayDeque<Integer>();
 
 ## 7.10 Number of ways 
 
-### How many different ways you can give m elements to n people. You can give nm ways.
+### How many different ways you can give m elements to n^m people. You can give nm ways.
 
 ### If there are ‘a’ ways to do one thing and ‘b’ ways to do another thing, then there are 
 ‘a’  ‘b’ ways to do these two things in succession.
