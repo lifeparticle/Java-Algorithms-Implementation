@@ -22,10 +22,11 @@ public static double countDigit(long a) {
      if(a == 0) 
 	 return 1;
      else {
-        sum = 0;
-        for(i = 1; i <= a; ++i)
-            sum += Math.log10(i); 
-        return Math.floor(sum) + 1;
+		sum = 0;
+		for(i = 1; i <= a; ++i)
+			sum += Math.log10(i); 
+		return Math.floor(sum) + 1;
+	}
 }
 double sum;
 long n;
@@ -137,7 +138,7 @@ ArrayDeque<Integer> Q = new ArrayDeque<Integer>();
 
 ## 7.10 Number of ways 
 
-### How many different ways you can give m elements to n^m people. You can give nm ways.
+### How many different ways you can give m elements to n people. You can give n^m ways.
 
 ### If there are ‘a’ ways to do one thing and ‘b’ ways to do another thing, then there are 
 ‘a’  ‘b’ ways to do these two things in succession.
