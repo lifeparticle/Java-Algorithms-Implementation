@@ -77,7 +77,7 @@ public static int LCSDP(String n, String m) {
 } 
 ```
 
-```
+```java
 // printing
 public static void ans() {
     String ans = "";
@@ -100,9 +100,15 @@ public static void ans() {
 ```
 ## 8.4 Longest Increasing Subsequence [ LIS]
 
+TODO
+
 ## 8.5 Longest Decreasing Subsequence [ LDS ]
 
+TODO
+
 ## 8.6 Edit Distance
+
+TODO
 
 ## 8.7 Using 1,2,3 how many numbers you can make such that the sum of their digits is equal to the given number
 
