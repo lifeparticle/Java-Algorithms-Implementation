@@ -148,7 +148,7 @@
 	14.30 Mathematical Library Functions 
 	14.31 Java Primitive Data Types
 	14.32 Others
-# 15. [Computational Geometry](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Computational520Geometry.md)
+# 15. [Computational Geometry](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Computational%20Geometry.md)
 	15.1 Basics
 	15.2 Triangle
 	15.3 Circle
