@@ -49,6 +49,27 @@ TODO
 ```
 
 ```java
+// LCS [DP] 
+ public static int dp[][] = new int[1005][1005];
+ public static int LCSDP(String n, String m) {
+        for (int i = 0; i <= n.length(); ++i)
+            dp[i][0] = 0;
+        for (int j = 0; j <= m.length(); ++j)
+            dp[0][j] = 0;
+
+        for (int i = 1; i <= n.length(); ++i) {
+            for (int j = 1; j <= m.length(); ++j) {
+                if (n.charAt(i - 1) == m.charAt(j - 1)) 
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                else
+                    dp[i][j] = Math.max(dp [i] [j - 1],dp [i - 1] [j]);
+            }
+        }
+        return dp[n.length()][m.length()];
+}
+```
+
+```java
 // LCS [DP] + parent reference
 public static int LCSDP(String n, String m) {
     for (int i = 0; i < n.length(); ++i)
@@ -160,6 +181,8 @@ public void countDP(){
     }
 }
 ```
+
+<img width="745" alt="Screen Shot 2020-04-02 at 7 46 38 pm" src="https://user-images.githubusercontent.com/1612112/78228743-d1f03000-751a-11ea-9d07-a56c96d7acbf.png">
 
 ## 8.9 Matrix Chain Multiplication [ MCM ]
 
