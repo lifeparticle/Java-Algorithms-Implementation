@@ -81,6 +81,7 @@ Minimum Cuts = 12 – 1 = 11
 Given a string of 0's and 1's up to 1000000 characters long and indices i and j, you are to answer a question whether all characters between position min (i, j) and position max (i, j) (inclusive) are the same.
 
   Input:  00000 11111 000 11111 0 1 0 1
+  
 Mapping:  00000 11111 222 33333 4 5 6 7
 
 ```java
