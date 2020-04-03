@@ -11,17 +11,29 @@ if ( ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) )
 The digital root (also repeated digital sum) of a number is the (single digit) value obtained by an iterative process of summing digits, on each iteration using the result from the previous iteration to compute a digit sum. The process continues until a single-digit number is reached.
 For example, the digital root of 65,536 is 7, because 6 + 5 + 5 + 3 + 6 = 25 and 2 + 5 = 7
 •	Digital root of a square is 1, 4, 7, or 9.
+
 •	Digital root of a perfect cube is 1, 8 or 9.
+
 •	Digital root of a prime number (except 3) is 1, 2, 4, 5, 7, or 8.
+
 •	Digital root of a power of 2 is 1, 2, 4, 5, 7, or 8. Digital roots of the powers of 2 progress in the sequence 1, 2, 4, 8, 7, 5, 1. This even applies to powers less than 1; for example, 2 to the power of 0 is 1; 2 to the power of -1 (minus one) is .5, with a digital root of 5; 2 to the power of -2 is .25, with a digital root of 7; and so on, ad infinitum in both directions.
+
 •	Digital root of an even perfect number (except 6) is 1.
+
 •	Digital root of a star number is 1 or 4.
+
 •	Digital root of a nonzero multiple of 9 is 9.
+
 •	Digital root of a nonzero multiple of 3 is 3, 6 or 9.
+
 •	Digital root of a triangular number is 1, 3, 6 or 9.
+
 •	Digital root of a factorial ≥ 6! is 9.
+
 •	Digital root of Fibonacci Series is a repeating pattern of 1, 1, 2, 3, 5, 8, 4, 3, 7, 1, 8, 9, 8, 8, 7, 6, 4, 1, 5, 6, 2, 8, 1, 9.
+
 •	Digital root of the product of twin primes, other than 3 and 5, is 8. The digital root of the product of 3 and 5 (twin primes) is 6.
+
 •	Digital root of a non-zero number is 9 if and only if the number is itself a multiple of 9
 
 ```java
@@ -118,19 +130,23 @@ Find the smallest angle between the hour hand and minute hand in an analogue clo
 
 The hour hand of a normal 12-hour analogue clock turns 360° in 12 hours (720 minutes) or 0.5° per minute.
 
+```
 In 12 hour (720 min) (43200 sec) the hour hand rotate --------------------- 360°
 In 1 hour (60 min) (3600 sec) the hour hand rotate    --------------------- 360°/12 = 30°
 In 1 (60 sec) minute the hour hand rotate             --------------------- 30°/60 = 0.5°
 In 1 second the hour hand rotates                     --------------------- 30°/(60*60) = 1°/120
+```
 
 Angle of 03:45:20 respect to 12:00:00 
 = (3 * 30) + (45 * 0.5) + (20 *  1/120) = 112.67° (hour hand)
 
 The minute hand rotates through 360° in 60 minutes or 6° per minute.
 
+```
 In 60 (3600 sec) minute the minute hand rotate ------------------------ 360°
 In 1 (60 sec) minute the minute hand rotate    ------------------------ 360°/60 = 6°
 In 1 second the minute hand rotates            ------------------------ 6°/60 = 0.1°
+```
 
 Angle of 00:45:15 respect to 12:00:00 
 = (45 * 6) + (15 * 0.1) = 271.5° (minute hand)
@@ -554,4 +570,3 @@ def McNuggets(n):
                     return True
     return False
 ```
-
