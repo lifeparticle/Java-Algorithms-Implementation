@@ -457,5 +457,8 @@ Lagrange's four-square theorem, also known as Bachet's conjecture, states that a
 Where the four numbers a0, a1, a2, a3 are integers. For illustration, 3, 31 and 310 can be represented as the sum of four squares as follows:
 
 3 = 1^2 + 1^2 + 1^2 + 0^2
+
 31 = 5^2 + 2^2 + 1^2 + 1^2
+
 310 = 17^2 + 4^2 + 2^2 + 1^2
+
