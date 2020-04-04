@@ -107,7 +107,7 @@ public static long sumDivV1 (long n) {
 }
 ```
 
-```
+```java
 // using prime factors
 public static long sumDivP1 (long n) {
         long m, c, sd = 1;
