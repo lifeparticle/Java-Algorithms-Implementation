@@ -48,7 +48,7 @@ double newton(){
 
 https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1282
 
-```
+```java
 import java.util.*;
 public class P10341 {
     public static int p,q,r,s,t,u;
@@ -200,9 +200,11 @@ public static double gamma (double z) {
 
 •	In a polynomial equation P(x)= 0, the terms being written in the order of power of x, the number of positive roots cannot exceed the number of changes of sign (+ to - & vice versa) in the coefficients of P(x), and the negative roots cannot exceed the number of changes of sign P(-x). The number of positive and negative roots of the polynomial is either equal to the number of sign differences between consecutive nonzero coefficients, or is less than it by a multiple of 2.
 
+```
 P (x) = x^5 - 3x^3 + 8x – 10    ------------>  3, 1 (+-, -+, +-)
 
 P (-x) = -x^5 + 3x^3 - 8x – 10  ------------>  2, 0 (-+, +-, --)
+```
 
 <img width="564" alt="Screen Shot 2020-04-05 at 5 01 55 pm" src="https://user-images.githubusercontent.com/1612112/78468904-43b8bb80-775f-11ea-8925-67abd458464b.png">
 
