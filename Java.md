@@ -6,27 +6,27 @@
 public class dice1{
     public int roller(){
         return ((int)(1+Math.random()*6));  
-// Math.random() returns a double value of 0 to less than 1
-// So Math.random()*6 creates value like 1.23 ,3,24, 5,343 ,0.0 
-// we need value from 1 to 6 integer type
-// so that’s why we are casting into int
-// but why plus one
-/* as you can see 0.0 int value 0 we don’t need that and also      highest value of Math.random()*6 */
-/* is 0.99*6=5.94 so if we int it then we get 5 so that’s why we are adding one so */
-// Math.random()*6 where 0.0*6 = 0+1 = 1 then int it we get 1
-// Math.random()*6 where 0.99*6 = 5.94+1 = 6.94 then int it we get 6
-// one question will arise to your mind that why not
-// Math.random()*7 yes that will solve one problem  
-// Math.random()*7 where 0.99*7 = 6.94 then int it we get 6
-// not the 0.0*7 = 0 problem
-// so in generally we have a start point and an end point 
-// a = the first number in your range
-// b = the last number in your range
-// r = (b - a + 1) is the number of terms in your range
-// (range computed by largest value - smallest value + 1
-// so for generating numbers between 13 to 19 excluding
-// a = 14 and b = 18 so r = (18-14+1) = 5  
-// return ((int) (14+Math.random ()*5));  
+        // Math.random() returns a double value of 0 to less than 1
+        // So Math.random()*6 creates value like 1.23 ,3,24, 5,343 ,0.0 
+        // we need value from 1 to 6 integer type
+        // so that’s why we are casting into int
+        // but why plus one
+        /* as you can see 0.0 int value 0 we don’t need that and also      highest value of Math.random()*6 */
+        /* is 0.99*6=5.94 so if we int it then we get 5 so that’s why we are adding one so */
+        // Math.random()*6 where 0.0*6 = 0+1 = 1 then int it we get 1
+        // Math.random()*6 where 0.99*6 = 5.94+1 = 6.94 then int it we get 6
+        // one question will arise to your mind that why not
+        // Math.random()*7 yes that will solve one problem  
+        // Math.random()*7 where 0.99*7 = 6.94 then int it we get 6
+        // not the 0.0*7 = 0 problem
+        // so in generally we have a start point and an end point 
+        // a = the first number in your range
+        // b = the last number in your range
+        // r = (b - a + 1) is the number of terms in your range
+        // (range computed by largest value - smallest value + 1
+        // so for generating numbers between 13 to 19 excluding
+        // a = 14 and b = 18 so r = (18-14+1) = 5  
+        // return ((int) (14+Math.random ()*5));  
     }  
 }
 ```
