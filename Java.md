@@ -1648,18 +1648,26 @@ Here's the output from the math library example
 
 
 Our explanation: 
+
 floor: largest integer that is smaller than given number
+
 ceil: smallest integer that is larger than given number
+
 rint: round given number (convert to int) to closer int
+
 round: (int)(given number + 0.5)
 
 Java doc’s explanation:
+
 static double ceil(double a) 
           Returns the smallest (closest to negative infinity) double value that is not less than the argument and is equal to a mathematical integer.
+
 static double floor(double a) 
           Returns the largest (closest to positive infinity) double value that is not greater than the argument and is equal to a mathematical integer.
+
 static double rint(double a) 
           Returns the double value that is closest in value to the argument and is equal to a mathematical integer. 
+
 static long round(double a) 
           Returns the closest long to the argument.
 
@@ -1784,7 +1792,8 @@ for (int i = 0; i < 5; i++) {
 ```java
 /* do while loop */
 int i  = 1;
-do {                            System.out.println(i++);
+do {
+    System.out.println(i++);
 } while (i < 5);
 
 // no matter what goes wrong, this loop at least execute once
