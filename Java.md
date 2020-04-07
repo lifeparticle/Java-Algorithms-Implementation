@@ -1197,7 +1197,7 @@ public static void main(String [] args) {
 
 ## 14.28 Faster I/O
 
-```
+```java
 // write flush(); at the end & and comment it before submission
 /* skeleton class */ /* S.MAHBUB - UZ - ZAMAN */ /* BRACU BYTE */ 
 
@@ -1350,6 +1350,497 @@ public class A implements Runnable {
 
 ## 14.29 printf
 
+| Code | Description                        |
+|------|------------------------------------|
+| %c   | character                          |
+| %d   | decimal (integer) number (base 10) |
+| %e   | exponential floating-point number  |
+| %f   | floating-point number              |
+| %i   | integer (base 10)                  |
+| %o   | octal number (base 8)              |
+| %s   | a string of characters             |
+| %u   | unsigned decimal (integer) number  |
+| %x/%X | in hexadecimal (base 16) [for x digits 0-9 and letters a-f and for X digits 0-9 and letters A-F] |
+| e/E | Display a floating-point value in exponential notation [1.000000e+02/1.000000E+02] |
+| a/A | Display a floating-point value in hexadecimal format |
+| g/G | 10^-5 < floating-point value is printed in format %f < and 10^-6 => value < floating-point value is printed in format %e/%E >= 10^6 |
+| %% | print a percent sign |
+| \% | print a percent sign |
+
+### Controlling printf integer width
+The "%3d" specifier means a minimum width of three spaces, which, by default, will be right-justified. (Note: the alignment is not currently being displayed properly here.)
+
+| Code                       | Description |
+|----------------------------|-------------|
+| printf("%3d", 0);          | 0           |
+| printf("%3d", 123456789);  | 123456789   |
+| printf("%3d", -10);        | -10         |
+| printf("%3d", -123456789); | -123456789  |
+
+### Left-justifying printf integer output
+To left-justify those previous printf examples, just add a minus sign (-) after the % symbol, like this:
+
+| Code                        | Description |
+|-----------------------------|-------------|
+| printf("%-3d", 0);          | 0           |
+| printf("%-3d", 123456789);  | 123456789   |
+| printf("%-3d", -10);        | -10         |
+| printf("%-3d", -123456789); | -123456789  |
+
+### The printf zero-fill option
+To zero-fill your printf integer output, just add a zero (0) after the % symbol, like this:
+
+| Code                        | Description |
+|-----------------------------|-------------|
+| printf("%03d", 0);          | 0           |
+| printf("%03d", 1);          | 1           |
+| printf("%03d", 123456789);  | 123456789   |
+| printf("%03d", -10);        | -10         |
+| printf("%03d", -123456789); | -123456789  |
+
+
+### printf integer formatting
+Here is a collection of printf examples for integer printing. Several different options are shown, including a minimum width specification, left-justified, zero-filled, and also a plus sign for positive numbers.
+
+| Description                          | Code                   | Result    |
+|--------------------------------------|------------------------|-----------|
+| At least five wide                   | printf("'%5d'", 10);   | `' 10'`   |
+| At least five-wide, left-justified   | printf("'%-5d'", 10);  | `'10 '`   |
+| At least five-wide, zero-filled      | printf("'%05d'", 10);  | `'00010'` |
+| At least five-wide, with a plus sign | printf("'%+5d'", 10);  | `' +10'`  |
+| Five-wide, plus sign, left-justified | printf("'%-+5d'", 10); | `'+10 '`  |
+
+Here are several examples showing how to print floating-point numbers with printf.
+
+| Description                                                 | Code                                | Result           |
+|-------------------------------------------------------------|-------------------------------------|------------------|
+| Print one position after the decimal                        | printf("'%.1f'", 10.3456);          | `'10.3'`         |
+| Two positions after the decimal                             | printf("'%.2f'", 10.3456);          | `'10.35'`        |
+| Eight-wide, two positions after the decimal                 | printf("'%8.2f'", 10.3456);         | `' 10.35'`       |
+| Eight-wide, four positions after the decimal                | printf("'%8.4f'", 10.3456);         | `' 10.3456'`     |
+| Eight-wide, two positions after the decimal, zero-filled    | printf("'%08.2f'", 10.3456);        | `'00010.35'`     |
+| Eight-wide, two positions after the decimal, left-justified | printf("'%-8.2f'", 10.3456);        | `'10.35 '`       |
+| Printing a much larger number with that same format         | printf("'%-8.2f'", 101234567.3456); | `'101234567.35'` |
+
+### printf string formatting
+Here are several printf formatting examples that show how to format string output with printf format specifiers.
+
+
+| Description                    | Code                        | Result     |
+|--------------------------------|-----------------------------|------------|
+| A simple string                | printf("'%s'", "Hello");    | `'Hello'`  |
+| A string with a minimum length | printf("'%10s'", "Hello");  | `' Hello'` |
+| Minimum length, left-justified | printf("'%-10s'", "Hello"); | `'Hello '` |
+
+Here are a few examples of how to use these special characters:
+
+| Description                        | Code                    | Result      |
+|------------------------------------|-------------------------|-------------|
+| Insert a tab character in a string | printf("Hello\tworld"); | Hello world |
+| Insert a newline character in a string |	printf("Hello\nworld"); | "Hello<br>world" |
+| Typical use of the newline character|	printf("Hello world\n"); |	Hello world |
+| A DOS/Windows path with backslash characters | printf("C:\\Windows\\System32\\");	| C:\Windows\System32\ |
+
+Summary of special printf characters
+
+| Code | Description          |
+|------|----------------------|
+| \a   | audible alert        |
+| \b   | backspace            |
+| \f   | form feed            |
+| \n   | newline, or linefeed |
+| \r   | carriage return      |
+| \t   | horizontal tab       |
+| \v   | vertical tab         |
+| \\   | backslash            |
+| \’   | single quote         |
+| \”   | double quote         |
+
+### Flags [There are seven flags]
+
+| Code          | Description                                                                                                                                                       |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -(minus sign) | Left justify the output within the specified filed [printf("%-10d\n",a);]                                 |
+| #ERROR!       | display a plus sign preceding positive values and a minus sign preceding negative values                  |
+| space         | print a space before a positive value not printed with the + falg                                         |
+| #             | prefix 0 to the output value when used with the octal conversion character o. Prefix 0x to the output value when used with the hexadecimal conversion character x |
+| 0(zero)       | Pad a filed with leading zeros                                                                                                                                    |
+| ,(comma)      | Use the local-specific thousands separator (for U.S. local) to display decimal and floating point numbers                                                         |
+| (             | Enclose negative numbers in parentheses |
+
+```java
+Calendar dateTime = Calendar.getInstance();
+
+System.out.printf( "%tc\n", dateTime );
+System.out.printf( "%tF\n", dateTime );
+System.out.printf( "%tD\n", dateTime );
+System.out.printf( "%tr\n", dateTime );
+System.out.printf( "%tT\n", dateTime );
+
+// printing with conversion characters for date
+System.out.printf( "%1$tA, %1$tB %1$td, %1$tY\n", dateTime );
+System.out.printf( "%1$TA, %1$TB %1$Td, %1$TY\n", dateTime );
+System.out.printf( "%1$ta, %1$tb %1$te, %1$ty\n", dateTime );
+
+// printing with conversion characters for time
+System.out.printf( "%1$tH:%1$tM:%1$tS\n", dateTime );
+System.out.printf( "%1$tZ %1$tI:%1$tM:%1$tS %tP", dateTime );
+```
+
+```
+Tue Jun 29 11:17:21 GMT-05:00 2004
+2004-06-29
+06/29/04
+11:17:21 AM
+11:17:21
+Tuesday, June 29, 2004
+TUESDAY, JUNE 29, 2004
+Tue, Jun 29, 04
+11:17:21
+GMT-05:00 11:17:21 AM
+```
+
+### Reordering output with argument indices
+
+```
+String s1 = "I";
+String s2 = "Love";
+String s3 = "ACM";
+System.out.printf("%s %s %s\n", s1, s2, s3);
+System.out.printf("%3$s %2$s %1$s\n", s1, s2, s3);
+// Output:
+// I Love ACM
+// ACM Love I
+```
+
 ## 14.30 Mathematical Library Functions 
+
+| In Mathematics      | In Java                                                                                                              |
+|---------------------|----------------------------------------------------------------------------------------------------------------------|
+| Square root of x    | Math.sqrt(x)                                                                                                         |
+| Cube root of x      | Math.cbrt(x)                                                                                                         |
+| Absolute value of x | Math.abs(x)                                                                                                          |
+| xy                  | Math.pow(x, y) or <br>Math.exp(Math.log10(x) * y)                                                                    |
+| ex                  | Math.exp(x)                                                                                                          |
+| loge(x)             | Math.log(x)                                                                                                          |
+| log10(x)            | Math.log10(x)                                                                                                        |
+| Floor               | Math.floor(x) <br> Round down to nearest integer                                                                     |
+| Ceil                | Math. ceil (x) <br>Round up to nearest integer                                                                       |
+| Value of PI         | Math.PI (3.141592653589793d)                                                                                         |
+| Value of E          | Math.E (2.718281828459045d)                                                                                          |
+| Random              | Math.random() <br> Returns randomly a number greater than or equal to 0.0 and less than 1.0                          |
+| Max                 | Math.max(x a , y b)<br>x = double, float, long, int<br>y = double, float, long, int<br>Return maximum of two numbers |
+| Min                 | Math.min(x a , y b)<br>x = double, float, long, int<br>y = double, float, long, int<br>Return minimum of two numbers |
+| Exp                 | Math.exp(double a)<br>Returns Euler's number e raised to the power of a double value                                 |
+| toRadians           | Math.toRadians(d) <br>Returns d (angle in degrees) converted to radians                                              |
+| toDegrees           | Math.toDegrees(ar) <br>Returns ar (angle in radians) converted to degrees                                            |
+| asin                | Math.asin(double a) Returns sine inverse value in radians                                                            |
+| acos                | Math.acos(double a)<br>Returns cosine inverse value in radians                                                       |
+| atan                | Math.atan(double a) <br>Returns tangent inverse value in radians                                                     |
+| atan                | Math.atan(double a)   Returns tangent inverse value in radians                                                       |
+| atan2               | Math.atan2(double y, double x) Converts Cartesian coordinates to polar coordinates                                   |
+| IEEEremainder       | Math. IEEEremainder(double f1, double f2) Returns the closest difference between the remainder and the divisor       |
+| Sinx                | Math.sin(x) <br>Return in radian                                                                                     |
+| Cosx                | Math.cos(x)<br>Return in radian                                                                                      |
+| Tanx                | Math.tan(x) <br>Return in radian                                                                                     |
+| sinx                | Math.sin(x*Math.PI/180) <br>Return in degree                                                                         |
+
+```java
+public class MathLibraryExample {
+
+  public static void main(String[] args) {
+    
+    int i = 7;
+    int j = -9;
+    double x = 72.3;
+    double y = 0.34;
+  
+
+    // Truncating and Rounding functions
+ 
+    // You can round off a floating point number  
+    // to the nearest integer with round()
+     System.out.println(x + " is approximately " + Math.round(x));     
+     System.out.println(y + " is approximately " + Math.round(y));     
+
+    // The "ceiling" of a number is the   
+    // smallest integer greater than or equal to
+    // the number. Every integer is its own 
+    // ceiling.
+     System.out.println("The ceiling of " + i + " is " + Math.ceil(i));     
+     System.out.println("The ceiling of " + j + " is " + Math.ceil(j));
+     System.out.println("The ceiling of " + x + " is " + Math.ceil(x));     
+     System.out.println("The ceiling of " + y + " is " + Math.ceil(y));
+
+     // The "floor" of a number is the largest  
+     // integer less than or equal to the number.
+     // Every integer is its own floor.
+     System.out.println("The floor of " + i + " is " + Math.floor(i));     
+     System.out.println("The floor of " + j + " is " + Math.floor(j));
+     System.out.println("The floor of " + x + " is " + Math.floor(x));     
+     System.out.println("The floor of " + y + " is " + Math.floor(y));
+
+     // Comparison operators
+
+     System.out.println("Pi is " + Math.PI);     
+     System.out.println("e is " + Math.E);       
+     // Trigonometric methods
+    // All arguments are given in radians
+ 
+    // Convert a 45 degree angle to radians
+    double angle = 45.0 * 2.0 * Math.PI/360.0;
+    System.out.println("cos(" + angle + ") is " + Math.cos(angle));     
+    System.out.println("sin(" + angle + ") is " + Math.sin(angle));     
+
+    // Exponential and Logarithmic Methods
+  
+    // exp(a) returns e (2.71828...) raised 
+    // to the power of a.   
+    System.out.println("exp(1.0) is "  + Math.exp(1.0));
+
+    // log(a) returns  the natural logarithm (base e) of a. 
+    System.out.println("log(1.0) is "    + Math.log(1.0));
+   }
+}
+```
+
+```
+Here's the output from the math library example 
+1.	72.3 is approximately 72
+2.	0.34 is approximately 0
+3.	The ceiling of 7 is 7
+4.	The ceiling of -9 is -9
+5.	The ceiling of 72.3 is 73
+6.	The ceiling of 0.34 is 1
+7.	The floor of 7 is 7
+8.	The floor of -9 is -9
+9.	The floor of 72.3 is 72
+10.	The floor of 0.34 is 0
+11.	e is 2.71828
+12.	exp(1.0) is 2.71828
+13.	log(1.0) is 0
+```
+
+| Double Number | Floor | rint | ceil | round |
+|---------------|-------|------|------|-------|
+| 0             | 0     | 0    | 0    | 0     |
+| 0.1           | 0     | 0    | 1    | 0     |
+| 0.2           | 0     | 0    | 1    | 0     |
+| 0.3           | 0     | 0    | 1    | 0     |
+| 0.4           | 0     | 0    | 1    | 0     |
+| 0.5           | 0     | 0    | 1    | 1     |
+| 0.6           | 0     | 1    | 1    | 1     |
+| 0.7           | 0     | 1    | 1    | 1     |
+| 0.8           | 0     | 1    | 1    | 1     |
+| 0.9           | 0     | 1    | 1    | 1     |
+| 1             | 0     | 1    | 1    | 1     |
+| 1.1           | 1     | 1    | 2    | 1     |
+| 1.2           | 1     | 1    | 2    | 1     |
+| 1.3           | 1     | 1    | 2    | 1     |
+| 1.4           | 1     | 1    | 2    | 1     |
+| 1.5           | 1     | 2    | 2    | 2     |
+| 1.6           | 1     | 2    | 2    | 2     |
+| 1.7           | 1     | 2    | 2    | 2     |
+| 1.8           | 1     | 2    | 2    | 2     |
+| 1.9           | 1     | 2    | 2    | 2     |
+| 2             | 2     | 2    | 3    | 2     |
+| 2.1           | 2     | 2    | 3    | 2     |
+
+
+Our explanation: 
+floor: largest integer that is smaller than given number
+ceil: smallest integer that is larger than given number
+rint: round given number (convert to int) to closer int
+round: (int)(given number + 0.5)
+
+Java doc’s explanation:
+static double ceil(double a) 
+          Returns the smallest (closest to negative infinity) double value that is not less than the argument and is equal to a mathematical integer.
+static double floor(double a) 
+          Returns the largest (closest to positive infinity) double value that is not greater than the argument and is equal to a mathematical integer.
+static double rint(double a) 
+          Returns the double value that is closest in value to the argument and is equal to a mathematical integer. 
+static long round(double a) 
+          Returns the closest long to the argument.
+
+
 ## 14.31 Java Primitive Data Types
+
+| Type    | Contains                | Default | Size    | Range                                                                      |
+|---------|-------------------------|---------|---------|----------------------------------------------------------------------------|
+| boolean | true or false           | FALSE   | 1 bit   | NA                                                                         |
+| char    | Unicode character       | \u0000  | 16 bits | \u0000 to \uFFFF                                                           |
+| byte    | Signed integer          | 0       | 8  bits | -128 to 127 [ -2^7 to 2^7-1 ]                                              |
+| short   | Signed integer          | 0       | 16 bits | -32,768 to 32,767 [ -2^15 to 2^15-1]                                       |
+| int     | Signed integer          | 0       | 32 bits | -2,147,483,648 to 2,147,483,647 [ -2^31 to 2^31-1 ]                        |
+| long    | Signed integer          | 0       | 64 bits | -9,223,372,036,854,775,808  to 9,223,372,036,854,775,807 [-2^63 to 2^63-1] |
+| float   | IEEE 754 floating point | 0       | 32 bits | ±1.4E-45 to ±3.4028235E+38                                                 |
+| double  | IEEE 754 floating point | 0       | 64 bits | ±4.9E-324 to ±1.7976931348623157E+308                                      |
+
 ## 14.32 Others
+
+```java
+/* Conversion [int, double, long, float to String] */
+int to String:
+String myString = Integer.toString(i)
+double to String: 
+String str = Double.toString(d);
+long to String: 
+String str = Long.toString(l);
+float to String: 
+String str = Float.toString(f);
+```
+
+```java
+/* Conversion [String to int, double, long, float] */
+String to int: 
+int i = Integer.parseInt(str);
+String to double: 
+double d = Double.parseDouble(s);
+String to long: 
+long l = Long.parseLong(str);
+String to float: 
+float d = Float.parseFloat(s);
+```
+
+```java
+/* integer to boolean */
+int i; // 1 or 0
+boolean b = (i != 0);
+```
+
+```java
+/* boolean to integer */
+boolean b; // true or false
+int i = (b) ? 1 : 0;
+```
+
+```java
+/* char to ASCII code */
+char c = 'A';
+int i = (int) c;
+```
+
+```java
+/* ASCII code to char */
+char c = 'A';
+int i = (int) c;
+```
+
+```java
+/* This Will Eat the Enter */
+int x = Integer.parseInt(sc.nextLine());
+long x = Long.parseLong(sc.nextLine());
+double x = Double.valueof(sc.nextLine());
+float x = Float.valueof(sc.nextLine());
+```
+
+```
+// from cmd
+
+Compilation:  javac className.java
+Execution:    java className 
+```
+
+```
+// batch file
+
+java className <input.txt>output.txt
+
+1. Save as .cmd or .bat
+2. Win7 (run as administrator)
+```
+
+```java
+/* ternary operator */
+if operand1 is true, operand2 is returned, else operand3 is returned 
+      operand1 ? operand2 : operand3
+
+      true ? op2 : op3                // operand2 returned
+      false ? op2 : op3               // operand3 returned
+
+a = (n % 2 == 0) ? 100 : 200;
+
+The above expression is equivalent to
+if(n % 2 == 0) 
+   a = 100;
+else
+   a = 200;
+```
+
+```java
+/* Multiple loop breaks */
+anyname: // usally used outerloop:
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+         if (i * j > 6) {
+             System.out.println("Breaking");
+             break anyname;
+         }
+     }
+}
+```
+
+```java
+/* do while loop */
+int i  = 1;
+do {                            System.out.println(i++);
+} while (i < 5);
+
+// no matter what goes wrong, this loop at least execute once
+```
+
+```java
+Integer.MAX_VALUE 
+/* A constant holding the maximum value an int can have, 231-1 */
+Integer.MIN_VALUE 
+
+/* A constant holding the minimum value an int can have, -231 */
+```
+
+```java
+Long.MAX_VALUE
+
+/* A constant holding the maximum value a long can have, 263-1 */
+
+Long.MIN_VALUE
+
+/* A constant holding the minimum value a long can have, -263 */
+```
+
+```java
+Double.POSITIVE_INFINITY
+
+/* A constant holding the positive infinity of type double. It is equal to the value returned by Double.longBitsToDouble(0x7ff0000000000000L) */
+Double. NEGATIVE_INFINITY 
+
+/* A constant holding the negative infinity of type double. It is equal to the value returned by Double.longBitsToDouble(0xfff0000000000000L) */
+```
+
+```java
+Double.MAX_VALUE
+/* A constant holding the largest positive finite value of type double, (2-2-52)·21023. It is equal to the hexadecimal floating-point literal 0x1.fffffffffffffP+1023 and also equal to Double.longBitsToDouble(0x7fefffffffffffffL) */
+Double.MIN_VALUE 
+
+/* A constant holding the smallest positive nonzero value of type double, 2-1074. It is equal to the hexadecimal floating-point literal 0x0.0000000000001P-1022 and also equal to Double.longBitsToDouble(0x1L) */
+```
+
+```java
+for (type var : arr){
+    body-of-loop
+}
+
+for (int i = 0; i < arr.length; i++){ 
+    type var = arr[i];
+    body-of-loop
+}
+
+for (type var : coll){
+    body-of-loop
+}
+
+for (Iterator<type> iter = coll.iterator(); iter.hasNext();){
+    type var = iter.next();
+    body-of-loop
+}
+```
