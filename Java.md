@@ -438,7 +438,7 @@ sT.countTokens();
 
 ## 14.7 Character
 
-``java
+```java
 Character.isDigit(char ch)
 // returns true if the char is a digit
 
