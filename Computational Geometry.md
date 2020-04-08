@@ -239,17 +239,18 @@ AD = AB
 <img width="287" alt="Screen Shot 2020-04-08 at 3 57 18 pm" src="https://user-images.githubusercontent.com/1612112/78749619-f2ecd100-79b1-11ea-9a68-2b9812a5cb8f.png">
 
 
-2. If Circle centered at (a, b) in a 2D Euclidian space with radius r is the set of all points (x, y) such that (x-a)^2+  (y-b)^2 = r^2
+2. If Circle centered at (a, b) in a 2D Euclidian space with radius r is the set of all points (x, y) such that (x-a)² + (y-b)² = r²
 
 3. 
 
 <img width="592" alt="Screen Shot 2020-04-08 at 4 00 11 pm" src="https://user-images.githubusercontent.com/1612112/78749663-0ef07280-79b2-11ea-807b-e2679344a8c1.png">
 
-•	Arc of a circle is defined as a connected section of the circumference c of the circle. Given the central angel α (angel with the vertex at the circles center) in degrees.
+
+• Arc of a circle is defined as a connected section of the circumference c of the circle. Given the central angel α (angel with the vertex at the circles center) in degrees.
 
 arc = α/360 × c
  
-•	Chord of a circle is defined a line segment whose endpoints lie on the circle (diameter is the longest chord in a circle). A circle with radius r and a central angle α (in degree) has the corresponding chord with length 
+• Chord of a circle is defined a line segment whose endpoints lie on the circle (diameter is the longest chord in a circle). A circle with radius r and a central angle α (in degree) has the corresponding chord with length 
 
 chord = √(2r²×(1- cos⁡α)) [Law of Cosines]
 
@@ -257,11 +258,11 @@ Another way to compute the length of chord given r and α is
 
 chord = 2 × r × sin⁡(α)/2 [Trigonometry]
 
-•	Sector of a circle is defined as a region of the circle enclosed by two radiuses and an arc lying between the two radiuses. A circle with area A and a central angle α (in degree).
+• Sector of a circle is defined as a region of the circle enclosed by two radiuses and an arc lying between the two radiuses. A circle with area A and a central angle α (in degree).
 
 sector = α/360 × A
 
-•	Segment of a circle is defined as a region of the circle enclosed by a chord and an arc lying between the chords endpoints. The area of a segment can be found by subtracting area of an isosceles triangle with side’s r, r and chord-length (or if the chord length is not given then 0.5 * r * r *  Math.sin(α)) from the area of the corresponding sector.
+• Segment of a circle is defined as a region of the circle enclosed by a chord and an arc lying between the chords endpoints. The area of a segment can be found by subtracting area of an isosceles triangle with side’s r, r and chord-length (or if the chord length is not given then 0.5 * r * r *  Math.sin(α)) from the area of the corresponding sector.
 
 segment = sector – area of an isosceles triangle
 
@@ -422,6 +423,8 @@ double n = Math.ceil ((3 + Math.sqrt (9 + (8 * d))) / 2.0);
 
 ## 15.10 Cylinder
 
+<img width="184" alt="Screen Shot 2020-04-08 at 4 26 13 pm" src="https://user-images.githubusercontent.com/1612112/78751496-b3c07f00-79b5-11ea-9c0c-49c1bfb9c3cf.png">
+
 ```java
 public class Geo_Cylinder {
     
@@ -440,14 +443,215 @@ public class Geo_Cylinder {
 } 
 ```
 
-1. Area = Area of top + Area of top bottom + Area of the side 
-        = π * r² + π * r² + 2 * π * r * h
-        = 2 * π * r² + 2 * π * r * h
-        = 2 * π * r * (r + h)
+1.  
 
+```
+Area = Area of top + Area of top bottom + Area of the side
+     = π * r² + π * r² + 2 * π * r * h
+     = 2 * π * r² + 2 * π * r * h
+     = 2 * π * r * (r + h)
+```
 
 ## 15.11 Cone
+
+<img width="250" alt="Screen Shot 2020-04-08 at 4 26 19 pm" src="https://user-images.githubusercontent.com/1612112/78751503-b7ec9c80-79b5-11ea-8cc4-86e31f82aa76.png">
+
+```java
+public class Geo_=Cone {
+    
+    public static double area (double L, double r) {
+        return (Math.PI * r * (r + L));
+    } 
+    
+    public static double volume (double h, double r) {
+        return ((1/3.0) * Math.PI * r * r * h);
+    } 
+    
+    
+    public static double lateralHeight (double h, double r) {
+        return (Math.sqrt((r * r) + (h * h)));
+    } 
+    
+    public static void main (String args []) {  
+    } 
+}
+```
+
+Basic Property of a Cone:
+
+1. 
+
+```
+Area = Area of bottom + Area of the side 
+        = π * r² + π * r * L 
+        = π * r * (r + L)
+```
+
 ## 15.12 Line
+
+TODO
+
 ## 15.13 Basic Formula of Geometry
+
+1. Euclidean distance: Given the two points (x1, y1) and (x2, y2), the distance between these points is given by the formula:
+
+```
+d = √(x_2-x_1)² + (y_2 - y_1)²
+```
+
+2. Convection degree to radian and vice versa
+
+```java
+double DEG_to_RAD(double d) { 
+	return d * Math.PI / 180.0; 
+}
+
+double RAD_to_DEG(double r) { 
+	return r * 180.0 / Math.PI; 
+}
+```
+
+3. A sphere is divided into 360 degrees. The number space is divided into two halves, East and West in the case of longitude (vertical lines) and North and South in the case of latitude (horizontal lines). The maximum ranges are as follows: 
+
+
+<img width="529" alt="Screen Shot 2020-04-08 at 4 34 26 pm" src="https://user-images.githubusercontent.com/1612112/78752112-d606cc80-79b6-11ea-92d5-1b0cb6d2e611.png">
+
+Latitude and longitude (অক্ষাংশ এবং দ্রাঘিমাংশ)
+
+
+### Conversion from DMS to Decimal Degree:
+Given a DMS (Degrees, Minutes, Seconds) coordinate such as W87°43′41″)
+
+•	Calculate the total number of seconds, 43′41″ = (43*60 + 41) = 2621 seconds.
+•	The fractional part is total number of seconds divided by 3600. 2621 / 3600 = ~0.728056
+•	Add fractional degrees to whole degrees to produce the final result: 87 + 0.728056 = 87.728056
+•	Since it is a West longitude coordinate, negate the result.
+•	The final result is -87.728056.
+
+```
+Longitude
+180 W  = -180
+180 E  =  180
+
+Latitude
+90 N   =  90
+90 S   = -90
+```
+
+```java
+// 44 16 0.00 N 76 30 0.00 W 43 41 0.00 N 79 38 0.00 W
+
+pLat = ar[0] + (( ar[1] * 60 + ar[2]) / 3600);
+if(ar[3].equals("S"))
+	pLat *= -1;
+pLong = ar[4] + ((ar[5] * 60 + ar[6])) / 3600);
+if(ar[7].equals("W"))
+	pLong *= -1;
+qLat = ar[8] + ((ar[9] * 60 + ar[10])) / 3600);
+if(ar[11].equals("S"))
+	qLat *= -1;
+qLong = ar[12] + ((ar[13] * 60 + ar[14])) / 3600);
+if(ar[15].equals("W"))
+	qLong *= -1;
+```
+
+### Conversion from Decimal Degree to DMS:
+Given a decimal longitudinal coordinate such as -87.728055 it is trivial to convert it to DMS form. It will be necessary to know whether it is a latitudinal or longitudinal coordinate in order to fully convert it. The method is as follows:
+
+• Subtract the whole number portion of the coordinate, leaving the fractional part. The whole number is the number of degrees. 87.728055 = 87 degrees.
+
+• Multiply the remaining fractional part by 60. This will produce a number of minutes in the whole number portion. 0.728055 x 60 = 43.6833 = 43 minutes.
+
+• Multiply the fractional part of the number of minutes by 60, producing a number of seconds. 0.6833 x 60 = 40.998 = 41 seconds. It is possible to count this as 40 seconds, truncating the decimal, round it to 41, or keep the entire number.
+
+• Depending on whether the source number was a latitudinal or longitudinal coordinate, and the sign of the number, add the N/S/E/W specifier. The following table shows the possibilities:
+
+```
+  	  Type  Dir.    Sign    Test
+•	  Lat.   N      +       > 0
+•	  Lat.   S      -       < 0
+•	  Long.  E      +       > 0
+•	  Long.  W      -       < 0
+```
+
 ## 15.14 Closest pair on 2D [ O (n log n) ]
+
+The closest-pair problem is finding the two closest points in a set of n points. The brute force algorithm checks every pair of points, which will make it O (N²). We can avoid computing square roots by using squared distance. We compute the distances between all the n (n − 1) / 2 pairs of points.
+
+<img width="250" alt="Screen Shot 2020-04-08 at 4 30 20 pm" src="https://user-images.githubusercontent.com/1612112/78751827-42cd9700-79b6-11ea-96e7-77639410265e.png">
+Closest pair of points shown in red
+
+```
+Input
+1 7
+0 8
+12 98
+100 7
+23 45
+3 78
+433 5
+2 3
+2 4
+0 0
+
+Output
+Closest Pair Distance = 1.0
+(x1, y1) (2.0, 3.0)
+(x2, y2) (2.0, 4.0)
+```
+
+```java
+// O (n^2) 
+/* this code handles only integer points like 3 4 not floating points like 3.3 5.6 */
+public class ClosestPair {
+    public static void main (String args []) {
+        Scanner sc = new Scanner (System.in);
+        Points p [] = new Points [10];
+        for(int i = 0; i < p.length; ++i)
+            p [i] = new Points();
+        for(int i = 0; i < p.length; ++i) {
+            p [i].x = sc.nextInt(); p [i].y = sc.nextInt();
+        }
+        int ans [] [] = closestPairBF(p);
+        System.out.println("Closest Pair Distance = " + Math.sqrt(ans [0][0]));
+        System.out.println("(x1, y1) (" + p[ ans [0][1] ].x+", "+p[ans [0][1]].y+")");
+        System.out.println("(x2, y2) (" + p[ ans [0][2] ].x+", "+p[ans [0][2]].y+")");
+    }
+    public static int [][] closestPairBF (Points [] p) {
+        int min = Integer.MAX_VALUE, i, j, d, imin = 0, jmin = 0;
+        for (i = 0; i < p.length; ++i) { 
+            for (j = i + 1; j < p.length; ++j) {
+                d = euclideanDistance(p[i], p[j]);
+                if(d < min) {
+                    min = d; imin = i; jmin = j;
+                } 
+            }
+        }
+        int ans [] [] = new int [1] [3];
+        ans [0][0] = min; ans [0][1] = imin; ans [0][2] = jmin;
+        return ans;
+    }
+    public static int euclideanDistance (Points p1, Points p2) {
+        return (int) (Math.pow((p1.x - p2.x), 2) + Math.pow((p1.y - p2.y), 2));
+    }
+}
+class Points {
+    double x;
+    double y;
+}
+```
+
+```java
+// O (n log n)]
+// TODO
+```
+
+4. 
+
+```
+pi = acos (-1.0) or pi = 2 × acos (0.0) /* for C or C++ */
+```
+
 ## 15.15 Convex Hull
+
+TODO
