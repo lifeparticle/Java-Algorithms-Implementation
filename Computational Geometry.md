@@ -483,8 +483,8 @@ Basic Property of a Cone:
 
 ```
 Area = Area of bottom + Area of the side 
-        = π * r² + π * r * L 
-        = π * r * (r + L)
+     = π * r² + π * r * L 
+     = π * r * (r + L)
 ```
 
 ## 15.12 Line
@@ -523,9 +523,13 @@ Latitude and longitude (অক্ষাংশ এবং দ্রাঘিমা
 Given a DMS (Degrees, Minutes, Seconds) coordinate such as W87°43′41″)
 
 •	Calculate the total number of seconds, 43′41″ = (43*60 + 41) = 2621 seconds.
+
 •	The fractional part is total number of seconds divided by 3600. 2621 / 3600 = ~0.728056
+
 •	Add fractional degrees to whole degrees to produce the final result: 87 + 0.728056 = 87.728056
+
 •	Since it is a West longitude coordinate, negate the result.
+
 •	The final result is -87.728056.
 
 ```
@@ -536,6 +540,12 @@ Longitude
 Latitude
 90 N   =  90
 90 S   = -90
+```
+
+4. 
+
+```
+pi = acos (-1.0) or pi = 2 × acos (0.0) /* for C or C++ */
 ```
 
 ```java
@@ -644,12 +654,6 @@ class Points {
 ```java
 // O (n log n)]
 // TODO
-```
-
-4. 
-
-```
-pi = acos (-1.0) or pi = 2 × acos (0.0) /* for C or C++ */
 ```
 
 ## 15.15 Convex Hull
