@@ -542,12 +542,6 @@ Latitude
 90 S   = -90
 ```
 
-4. 
-
-```
-pi = acos (-1.0) or pi = 2 × acos (0.0) /* for C or C++ */
-```
-
 ```java
 // 44 16 0.00 N 76 30 0.00 W 43 41 0.00 N 79 38 0.00 W
 
@@ -577,11 +571,17 @@ Given a decimal longitudinal coordinate such as -87.728055 it is trivial to conv
 • Depending on whether the source number was a latitudinal or longitudinal coordinate, and the sign of the number, add the N/S/E/W specifier. The following table shows the possibilities:
 
 ```
-  	  Type  Dir.    Sign    Test
-•	  Lat.   N      +       > 0
-•	  Lat.   S      -       < 0
-•	  Long.  E      +       > 0
-•	  Long.  W      -       < 0
+Type  Dir.    Sign    Test
+Lat.   N      +       > 0
+Lat.   S      -       < 0
+Long.  E      +       > 0
+Long.  W      -       < 0
+```
+
+4. 
+
+```
+pi = acos (-1.0) or pi = 2 × acos (0.0) /* for C or C++ */
 ```
 
 ## 15.14 Closest pair on 2D [ O (n log n) ]
