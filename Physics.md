@@ -13,4 +13,4 @@ double cel = T - 273;
 
 ## 17.2 Equations of uniformly accelerated linear motion
 
-<img width="490" alt="Screen Shot 2020-04-09 at 8 01 14 pm" src="https://user-images.githubusercontent.com/1612112/78883469-e5604580-7a9c-11ea-95cf-285df9a84575.png">
+<img width="486" alt="Screen Shot 2020-04-09 at 8 02 39 pm" src="https://user-images.githubusercontent.com/1612112/78883625-15a7e400-7a9d-11ea-8567-7318a8460c24.png">
