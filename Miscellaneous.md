@@ -57,8 +57,8 @@ e.	use BigInteger for big number calculation
 ### 12. Double and BigDecimal
 
 ```java
-double a = 2;                        // 2.0                                
-double b = 2.0; 					 // 2.0
+double a = 2;                               // 2.0                                
+double b = 2.0;                             // 2.0
         
 BigDecimal c = BigDecimal.valueOf(2);      // 2 
 BigDecimal d = BigDecimal.valueOf(2.0);    // 2.0
