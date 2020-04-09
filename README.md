@@ -1,3 +1,5 @@
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lifeparticle/Java-Algorithms-Implementation/issues)
+
 # 1. [GCD & LCM ](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/GCD%20%26%20LCM.md)
 	1.1 Basics of GCD and LCM
 	1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
