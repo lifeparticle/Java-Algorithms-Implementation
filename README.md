@@ -182,7 +182,7 @@
 	17.2 Equations of uniformly accelerated linear motion
 # 18. [ASCII Table](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/ASCII%20Table.md)
 
-# 19 [Miscellaneous](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Miscellaneous.md)
+# 19. [Miscellaneous](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Miscellaneous.md)
 
 Bug Reports and Feature Requests
 ============
