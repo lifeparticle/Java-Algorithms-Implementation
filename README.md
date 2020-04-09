@@ -1,5 +1,29 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lifeparticle/Java-Algorithms-Implementation/issues)
 
+
+   * [1. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/GCD & LCM.md">GCD &amp; LCM </a>](#1-gcd--lcm-)
+   * [2. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Sorting.md">Sorting</a>](#2-sorting)
+   * [3. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Searching.md">Searching</a>](#3-searching)
+   * [4. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/String.md">String</a>](#4-string)
+   * [5. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Number Generation.md">Number Generation</a>](#5-number-generation)
+   * [6. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Fibonacci Series.md">Fibonacci Series</a>](#6-fibonacci-series)
+   * [7. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Combinatorics.md">Combinatorics</a>](#7-combinatorics)
+   * [8. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Dynamic Programming.md">Dynamic Programming</a>](#8-dynamic-programming)
+   * [9. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Greedy.md">Greedy</a>](#9-greedy)
+   * [10. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Algorithm.md">Algorithm</a>](#10-algorithm)
+   * [11. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Number Theory.md">Number Theory</a>](#11-number-theory)
+   * [12. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Numerical Methods.md">Numerical Methods</a>](#12-numerical-methods)
+   * [13. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Basics of Numbers.md">Basics of Numbers</a>](#13-basics-of-numbers)
+   * [14. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Java.md">Java</a>](#14-java)
+   * [15. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Computational Geometry.md">Computational Geometry</a>](#15-computational-geometry)
+   * [16. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Math.md">Math</a>](#16-math)
+   * [17. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Physics.md">Physics</a>](#17-physics)
+   * [18. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/ASCII Table.md">ASCII Table</a>](#18-ascii-table)
+   * [19. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Miscellaneous.md">Miscellaneous</a>](#19-miscellaneous)
+   * [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
+   * [Author](#author)
+   * [License](#license)
+
 # 1. [GCD & LCM ](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/GCD%20%26%20LCM.md)
 	1.1 Basics of GCD and LCM
 	1.2 GCD [ Euclid’s Algorithm ] [ O log10(n), n = max(a, b) ]
