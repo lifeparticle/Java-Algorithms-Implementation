@@ -529,6 +529,14 @@ i.remove(17);
 // Removes the specified element from this set if it is present
 i.isEmpty();
 // Returns true if this set contains no elements
+
+s.add("1");
+s.add("1");
+s.add("2");
+
+while(itS.hasNext()){
+    System.out.println(itS.next());
+}
 ```
 
 ## 14.10 Tree Map
