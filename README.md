@@ -1,5 +1,8 @@
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lifeparticle/Java-Algorithms-Implementation/issues)
+<h1 align="center">Java Algorithms Implementation</h1></br>
 
+<p align="center">
+<a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/issues"><img alt="contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
+</p>
 
    * [1. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/GCD & LCM.md">GCD &amp; LCM </a>](#1-gcd--lcm-)
    * [2. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Sorting.md">Sorting</a>](#2-sorting)
