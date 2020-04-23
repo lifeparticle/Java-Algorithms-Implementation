@@ -537,6 +537,8 @@ s.add("2");
 while(itS.hasNext()){
     System.out.println(itS.next());
 }
+
+String joined = String.join(",", s);
 ```
 
 ## 14.10 Tree Map
