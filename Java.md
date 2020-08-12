@@ -769,7 +769,15 @@ Vector<Integer> v = new Vector<Integer> (Collections.nCopies (5, 5));
 
 ## 14.14 ArrayList
 
-TODO
+```java
+List<Integer> nums = new ArrayList<Integer>();
+
+nums.add("1");
+nums.add("2");
+nums.add("3");
+nums.add("4");
+System.out.println(cars);
+```
 
 ## 14.15 Array Deque
 
