@@ -858,6 +858,9 @@ s.push('c');
 // c <- top of the stack [TOS]
 // b
 // a
+
+for(Character c: s)
+    System.out.println(c);
 ```
 
 ## 14.17 Queue
