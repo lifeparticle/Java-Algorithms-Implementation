@@ -767,7 +767,7 @@ Vector<Integer> v = new Vector<Integer> (Collections.nCopies (5, 5));
 // initial size (5) and initial value {5, 5, 5, 5, 5} 
 ```
 
-## 14.14 ArrayList
+## 14.14 
 
 ```java
 List<Integer> nums = new ArrayList<Integer>();
@@ -777,6 +777,10 @@ nums.add("2");
 nums.add("3");
 nums.add("4");
 System.out.println(cars);
+
+
+// convert ArrayList to int array
+int[] array = list.stream().mapToInt(i->i).toArray();
 ```
 
 ## 14.15 Array Deque
