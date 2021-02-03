@@ -23,6 +23,7 @@
    * [17. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Physics.md">Physics</a>](#17-physics)
    * [18. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/ASCII Table.md">ASCII Table</a>](#18-ascii-table)
    * [19. <a href="https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Miscellaneous.md">Miscellaneous</a>](#19-miscellaneous)
+   * [My Articles](#my-articles)
    * [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
    * [Author](#author)
    * [License](#license)
@@ -212,6 +213,10 @@
 # 18. [ASCII Table](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/ASCII%20Table.md)
 
 # 19. [Miscellaneous](https://github.com/lifeparticle/Java-Algorithms-Implementation/blob/master/Miscellaneous.md)
+
+My Articles
+============
+1. [How to Determine a Prime Number Efficiently](https://medium.com/logic-gates/how-to-determine-a-prime-number-efficiently-bca843c4d377)
 
 Bug Reports and Feature Requests
 ============
