@@ -55,9 +55,10 @@ int fibonacci(int n) {
 less than 2^31 Fibonacci number is 1,836,311,903
 
 ## 5.2 Generation of  Fibonacci Numbers [ log(n) ]
-/* Matrix exponentiation */
+
 
 ```java
+/* Matrix exponentiation */
 public static int fib (int n) {
         int i = n - 1, a = 1, b = 0, c = 0, d = 1, t;
         if (n <= 0)
