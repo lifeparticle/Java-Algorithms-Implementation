@@ -218,6 +218,7 @@ My Articles
 ============
 1. [How to Determine a Prime Number Efficiently](https://medium.com/logic-gates/how-to-determine-a-prime-number-efficiently-bca843c4d377)
 2. [An Introduction to Linear Search](https://medium.com/logic-gates/an-introduction-to-linear-search-269e2038e952)
+3. [An Introduction to Binary Search](https://medium.com/logic-gates/an-introduction-to-binary-search-7518db2b70b4)
 
 Bug Reports and Feature Requests
 ============
