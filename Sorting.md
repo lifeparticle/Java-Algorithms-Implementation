@@ -40,24 +40,31 @@ There is no "middle" number, because there are even numbers of numbers. In this 
 ```java
 // with two optimizations
 
-public void bubbleSort(int[] arr) {
-    
-    boolean swapped = true;
-    int j = 0, i;
-    int tmp;
-    
-    while (swapped) {
-        swapped = false;
-        j++;
-        for (i = 0; i < arr.length - j; ++i) {
-            if (arr [i] > arr [i + 1]) {
-                tmp = arr [i];
-                arr [i] = arr [i + 1];
-                arr [i + 1] = tmp;
-                swapped = true;
-            }
-        }                
-    }
+public class Main {
+	public static void main (String args[]) {
+		bubbleSort(new int [] {1, 4, 7, 10, 0});
+	}
+
+	public static void bubbleSort(int[] arr) {
+
+		boolean isSorted = false;
+		int j = 1, i;
+		int tmp;
+
+		while (!isSorted) {
+			isSorted = true;
+
+			for (i = 0; i < arr.length - j; ++i) {
+				if (arr [i] > arr [i + 1]) {
+					tmp = arr [i];
+					arr [i] = arr [i + 1];
+					arr [i + 1] = tmp;
+					isSorted = false;
+				}
+			}
+			j++;
+		}
+	}
 }
 ```
 
