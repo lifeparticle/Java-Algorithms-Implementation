@@ -126,21 +126,25 @@ ar [j + 1] = key;
 ## 2.5 Selection Sort [ O (n2) ]
 
 ```java
-public void selectionSort(int[] arr) { 
-      int i, j, minIndex, tmp; 
-      int n = arr.length; 
-      for (i = 0; i < n - 1; ++i) { 
-            minIndex = i; 
-            for (j = i + 1; j < n; ++j) {
-                  if (arr[j] < arr[minIndex]) 
-                        minIndex = j; 
-		  }
-            if (minIndex != i) { 
-                  tmp = arr [i]; 
-                  arr [i] = arr[minIndex]; 
-                  arr [minIndex] = tmp; 
-            } 
-      } 
+public class Main {
+	public static void main (String args[]) {
+		selectionSort(new int [] {1, 4, 7, 10, 2});
+	}
+
+	public static void selectionSort(int[] arr) {
+		int tmp, minIndex;
+		for (int i = 0; i < arr.length - 1; ++i) {
+			minIndex = i;
+			for (int j = i + 1; j < arr.length; ++j) {
+				if (arr[minIndex] > arr[j]) {
+					minIndex = j;
+				}
+			}
+			tmp = arr [i];
+			arr [i] = arr [minIndex];
+			arr [minIndex] = tmp;
+		}
+	}
 }
 ```
 
