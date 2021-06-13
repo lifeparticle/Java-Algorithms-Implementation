@@ -94,34 +94,24 @@ for (j = 0; j < ar.length; ++j) {
 ## 2.4 Insertion Sort [ O (n2) ]
 
 ```java
-// key < ascending && key > descending
+public class Main {
+	public static void main (String args[]) {
+		insertionSort(new int [] {1, 4, 7, 10, 2});
+	}
 
-public void insertionSort(int[] arr) {
-	int key, i, j;
-	for (i = 1; i < ar.length; ++i) {
-		key = ar [i];
-		j = i - 1;
-		while (j >= 0 && key < ar [j]) { 
-			ar [j + 1] = ar [j];
-			--j;
+	public static void insertionSort(int[] arr) {
+		int tmp, j;
+		for (int i = 1; i < arr.length; ++i) {
+			j = i;
+			while(j > 0 && arr[j] < arr[j-1]) {
+				tmp = arr [j];
+				arr [j] = arr [j-1];
+				arr [j-1] = tmp;
+				j--;
+			}
 		}
-		ar [j + 1] = key;
 	}
 }
- 
-// insert a value in a sorted array
-
-int [] ar = new int [10];
-int size = 10;
-int j = size - 1;
-int key = 20;
-
-while (j >= 0 && key < ar [j]) {
-    ar [j + 1] = ar [j];
-    --j;
-}
-ar [j + 1] = key;
-
 ```
 ## 2.5 Selection Sort [ O (n2) ]
 
